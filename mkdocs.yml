@@ -1,9 +1,9 @@
-site_name: NMCP Data Mapping progress report
-site_url: https://hamza-ye.github.io/mass-pro-docs/
+site_name: NMCP Yemen Info System Docs
+# site_url: https://hamza-ye.github.io/mass-pro-docs/
 site_author: Hamza
-repo_name: Hamza-ye/mass-pro-docs
-repo_url: https://github.com/Hamza-ye/mass-pro-docs
-edit_uri: edit/master/documentation/docs/
+repo_name: MassPro-NMCPYE Docs
+repo_url: https://github.com/MassPro-NMCPYE/mass-pro-docs
+edit_uri: edit/main/docs/
 theme:
   # name: readthedocs
   name: material
@@ -51,7 +51,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/Hamza-ye
+      link: https://github.com/orgs/MassPro-NMCPYE/discussions
 
 markdown_extensions:
   - tables
@@ -87,11 +87,20 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-        # nav:
-        #   - Home: index.md
-        #   - Data Files: data-files.md
-        #   - About: about.md
-
+nav:
+  - Home: index.md
+  - 2. System Overview: system-overview.md
+  - 3. Architecture: architecture.md
+  - 4. Data Management: data-management.md
+  - 5. Database Schema: database-schema.md
+  - 6. User Management: user-management.md
+  - 7. Interoperability and Standards: interoperability-and-standards.md
+  - 8. Security: security.md
+  - 9. User Interface: user-interface.md
+  - 10. Workflow Management: workflow-management.md
+  - 11. Implementation Details: implementation-details.md
+  - 12. Future Enhancements: future-enhancements.md
+  - 13. Diagrams and Visuals: diagrams-and-visuals.md
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js

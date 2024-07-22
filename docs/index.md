@@ -4,7 +4,7 @@
 
 The report outlines a comprehensive Information System (IS) for managing National Malaria Control Program (NMCP) activities and data.
 
-## Report
+## Brainstorming
 
 Projects: representing a boundary under which different activities can be defined and manged, A project might be a department that encapsulate their different activities. For Example:
 
