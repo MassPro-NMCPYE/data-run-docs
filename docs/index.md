@@ -59,14 +59,6 @@ The system would implement different standards to make enterpropupulity easier w
 
 System Features brainstorming:
 
-- **Modular Design:** The modular architecture separates activities, projects, teams, and assignments, facilitating organization, scalability, and future expansion.
-- **Dynamic Data Forms:**  The ability to create and configure forms dynamically allows for tailored data collection specific to each activity, ensuring data relevance.
-- **Data Flow Management:**  Specifying data entry and data flow processes promotes data integrity and traceability, crucial for program monitoring and evaluation.
-- **Offline Data Collection:**  A mobile app facilitates data collection in the field, even without internet connectivity, ensuring data capture regardless of network limitations, with a mechanism to synchronize collected data with the central server when internet connectivity becomes available, preventing data loss.
-- **Data Visualization Tools:**  The inclusion of pivot tables, charts, and dashboards allows for effective data analysis and generation of user-friendly reports for informed decision-making.
-- **Open Architecture (API):**  A standard API enables seamless data exchange with other health information systems, fostering interoperability and data integration.
-- **Interoperability Standards:**  Implementing interoperability standards simplifies future integration with other systems, promoting a more connected health ecosystem.
-
 **Suggestions for Improvement:**
 
 - **Security Enhancements:**  The report doesn't explicitly mention security features. Implementing robust user authentication, authorization, and data encryption is crucial for protecting sensitive patient health information.
@@ -91,6 +83,196 @@ erDiagram
   Activity ||--o{ DataForm : "activity"
   Assignment ||--o{ VillageLocation : "organizationUnit"
   Team ||--o{ Assignment : "assigned to"
+  VillageLocation ||--o{ Assignment : "assigned in"
+  District ||--o{ VillageLocation : "includes"
+  Project {
+        String uid
+        String code
+        String name
+        Boolean disabled
+    }
+
+  Activity {
+      String uid
+      String code
+      String name
+      Instant startDate
+      Instant endDate
+      Boolean disabled
+      Boolean deleteClientData
+  }
+
+  VillageLocation {
+      String uid
+      String code
+      String name
+      Integer mappingStatus
+      Integer districtCode
+      String villageUid
+      String subdistrictName
+      String villageName
+      String subvillageName
+      Integer urbanRuralId
+      String urbanRural
+      String settlement
+      Double pop2004
+      Double pop2022
+      Double longitude
+      Double latitude
+      String ppcCodeGis
+      PublicLocationType level
+  }
+
+  Assignment {
+      String uid
+      String code
+      Integer phaseNo
+      Integer districtCode
+      String gov
+      String district
+      String subdistrict
+      String village
+      String subvillage
+      String name
+      Integer dayId
+      Double population
+      Integer itnsPlanned
+      Integer targetType
+      Double longitude
+      Double latitude
+      Instant startDate
+  }
+
+  Team {
+      String uid
+      String code
+      String name
+      String description
+      String mobile
+      Integer workers
+      String mobility
+      TeamType teamType
+      Boolean disabled
+      Boolean deleteClientData
+  }
+
+  Warehouse {
+      String uid
+      String code
+      String name
+      String description
+      String gpsCoordinate
+      String supervisor
+      String supervisorMobile
+  }
+
+  WarehouseItem {
+      String uid
+      String code
+      String name
+      String description
+  }
+
+  WarehouseTransaction {
+      String uid
+      String code
+      String name
+      String imovUid
+      Instant transactionDate
+      Integer phaseNo
+      String entryType
+      Integer quantity
+      String notes
+      String personName
+      Integer workDayId
+      Instant submissionTime
+      Long submissionId
+      Boolean deleted
+      String submissionUuid
+      Instant startEntryTime
+      Instant finishedEntryTime
+      SyncableStatus status
+  }
+
+  DataForm {
+      String uid
+      String code
+      String name
+      String description
+      Boolean disabled
+  }
+```
+
+**Warehouse Management:**
+
+```mermaid
+erDiagram
+  Activity ||--o{ Warehouse : "activity"
+  Team ||--o{ WarehouseTransaction : "WarehouseTransactions"
+  Warehouse ||--o{ WarehouseTransaction : "sourceWarehouse"
+  Warehouse ||--o{ WarehouseTransaction : "WarehouseTransactions"
+  WarehouseItem ||--o{ WarehouseTransaction : "item"
+
+  Activity {
+      String uid
+      String code
+      String name
+      Instant startDate
+      Instant endDate
+      Boolean disabled
+      Boolean deleteClientData
+  }
+
+  Team {
+      String uid
+      String code
+      String name
+      String description
+      String mobile
+      Integer workers
+      String mobility
+      TeamType teamType
+      Boolean disabled
+      Boolean deleteClientData
+  }
+
+  Warehouse {
+      String uid
+      String code
+      String name
+      String description
+      String gpsCoordinate
+      String supervisor
+      String supervisorMobile
+  }
+
+  WarehouseItem {
+      String uid
+      String code
+      String name
+      String description
+  }
+
+  WarehouseTransaction {
+      String uid
+      String code
+      String name
+      String imovUid
+      Instant transactionDate
+      Integer phaseNo
+      String entryType
+      Integer quantity
+      String notes
+      String personName
+      Integer workDayId
+      Instant submissionTime
+      Long submissionId
+      Boolean deleted
+      String submissionUuid
+      Instant startEntryTime
+      Instant finishedEntryTime
+      SyncableStatus status
+  }
 ```
 
 **Team Management:**
@@ -98,10 +280,80 @@ erDiagram
 ```mermaid
 erDiagram
   User ||--o{ Team : "userInfo"
+  Activity ||--o{ Team : "userInfo"
   Team ||--o{ Assignment : "team"
   Team ||--o{ WarehouseTransaction : "team"
   Team ||--o{ Warehouse : "warehouse"
   Team ||--o{ DataFieldValue : "team"
+
+  Activity {
+      String uid
+      String code
+      String name
+      Instant startDate
+      Instant endDate
+      Boolean disabled
+      Boolean deleteClientData
+  }
+
+  Assignment {
+      String uid
+      String code
+      Integer phaseNo
+      Integer districtCode
+      String gov
+      String district
+      String subdistrict
+      String village
+      String subvillage
+      String name
+      Integer dayId
+      Double population
+      Integer itnsPlanned
+      Integer targetType
+      Double longitude
+      Double latitude
+      Instant startDate
+  }
+
+  Team {
+      String uid
+      String code
+      String name
+      String description
+      String mobile
+      Integer workers
+      String mobility
+      TeamType teamType
+      Boolean disabled
+      Boolean deleteClientData
+  }
+
+  WarehouseTransaction {
+      String uid
+      String code
+      String name
+      String imovUid
+      Instant transactionDate
+      Integer phaseNo
+      String entryType
+      Integer quantity
+      String notes
+      String personName
+      Integer workDayId
+      Instant submissionTime
+      Long submissionId
+      Boolean deleted
+      String submissionUuid
+      Instant startEntryTime
+      Instant finishedEntryTime
+      SyncableStatus status
+  }
+
+  DataFieldValue {
+      String uid
+      String value
+  }
 ```
 
 **Data Entry:**
@@ -114,7 +366,71 @@ erDiagram
   DataField ||--o{ DataFieldValue : "value"
   Assignment ||--o{ DataFieldValue : "assignment"
   Team ||--o{ DataFieldValue : "team"
+
+  Assignment {
+      String uid
+      String code
+      Integer phaseNo
+      Integer districtCode
+      String gov
+      String district
+      String subdistrict
+      String village
+      String subvillage
+      String name
+      Integer dayId
+      Double population
+      Integer itnsPlanned
+      Integer targetType
+      Double longitude
+      Double latitude
+      Instant startDate
+  }
+
+  Team {
+      String uid
+      String code
+      String name
+      String description
+      String mobile
+      Integer workers
+      String mobility
+      TeamType teamType
+      Boolean disabled
+      Boolean deleteClientData
+  }
+
+  DataForm {
+      String uid
+      String code
+      String name
+      String description
+      Boolean disabled
+  }
+
+  DataField {
+      String uid
+      String code
+      String name
+      String description
+      ValueType type
+      Boolean required
+  }
+
+  DataOption {
+      String uid
+      String code
+      String name
+      String description
+  }
+
+  DataFieldValue {
+      String uid
+      String value
+  }
 ```
+
+**All System Schema:**
 
 ```mermaid
 erDiagram
@@ -136,4 +452,141 @@ erDiagram
   DataField ||--o{ DataOption : "option"
   DataField ||--o{ DataFieldValue : "value"
   User ||--o{ Team : "userInfo"
+  Project {
+        String uid
+        String code
+        String name
+        Boolean disabled
+    }
+
+  Activity {
+      String uid
+      String code
+      String name
+      Instant startDate
+      Instant endDate
+      Boolean disabled
+      Boolean deleteClientData
+  }
+
+  VillageLocation {
+      String uid
+      String code
+      String name
+      Integer mappingStatus
+      Integer districtCode
+      String villageUid
+      String subdistrictName
+      String villageName
+      String subvillageName
+      Integer urbanRuralId
+      String urbanRural
+      String settlement
+      Double pop2004
+      Double pop2022
+      Double longitude
+      Double latitude
+      String ppcCodeGis
+      PublicLocationType level
+  }
+
+  Assignment {
+      String uid
+      String code
+      Integer phaseNo
+      Integer districtCode
+      String gov
+      String district
+      String subdistrict
+      String village
+      String subvillage
+      String name
+      Integer dayId
+      Double population
+      Integer itnsPlanned
+      Integer targetType
+      Double longitude
+      Double latitude
+      Instant startDate
+  }
+
+  Team {
+      String uid
+      String code
+      String name
+      String description
+      String mobile
+      Integer workers
+      String mobility
+      TeamType teamType
+      Boolean disabled
+      Boolean deleteClientData
+  }
+
+  Warehouse {
+      String uid
+      String code
+      String name
+      String description
+      String gpsCoordinate
+      String supervisor
+      String supervisorMobile
+  }
+
+  WarehouseItem {
+      String uid
+      String code
+      String name
+      String description
+  }
+
+  WarehouseTransaction {
+      String uid
+      String code
+      String name
+      String imovUid
+      Instant transactionDate
+      Integer phaseNo
+      String entryType
+      Integer quantity
+      String notes
+      String personName
+      Integer workDayId
+      Instant submissionTime
+      Long submissionId
+      Boolean deleted
+      String submissionUuid
+      Instant startEntryTime
+      Instant finishedEntryTime
+      SyncableStatus status
+  }
+
+  DataForm {
+      String uid
+      String code
+      String name
+      String description
+      Boolean disabled
+  }
+
+  DataField {
+      String uid
+      String code
+      String name
+      String description
+      ValueType type
+      Boolean required
+  }
+
+  DataOption {
+      String uid
+      String code
+      String name
+      String description
+  }
+
+  DataFieldValue {
+      String uid
+      String value
+  }
 ```
