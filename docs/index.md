@@ -1,143 +1,50 @@
-# Mass Pro Brainstorming
+# DataRun System, NMCP Yemen
 
-**Project:** Information System for managing National Malaria Control Program Activities' and Data.
+## 1. Introduction
 
-The report outlines a comprehensive Information System (IS) for managing National Malaria Control Program (NMCP) activities and data.
+### 1.1 Purpose
 
-## Brainstorming
+The purpose of this document is to provide a comprehensive overview of the DataRun Information System, developed to manage activities and data for the National Malaria Control Program (NMCP). This document serves as a foundational reference for understanding the system's architecture, features, and functionalities. It is intended to facilitate the ongoing development, maintenance, and enhancement of the system, ensuring its effective implementation and integration with other health information systems.
 
-Projects: representing a boundary under which different activities can be defined and manged, A project might be a department that encapsulate their different activities. For Example:
+### 1.2 Scope
 
-Project 1: ITNs Project
- -> activity 1: ITNs Mass Distribution Campaign of 2020
- -> activity 2: ITNs Mass Distribution Campaign of 2021
+This document covers the DataRun system in its entirety, including its design, architecture, key features, data management, database schema, user management, interoperability, security, user interface, workflow management, implementation details, and future enhancements. It provides detailed descriptions, diagrams, and visual aids to help stakeholders understand the system's components and their interactions.
 
-Project 2: IRS Project
- -> activity 1: IRS Campaign of 2020
- -> activity 2: IRS Campaign of 2021
+### 1.3 Audience
 
- Project 3: Community health Volunteers (CHVs) Project
- -> activity 1: CHV Routine Activity
- -> activity 2: Supervision Activity
+The intended audience for this document includes:
 
-Each Activity might has Multiple Teams, and Multiple Assignment each assignment assigned to a certain team, A team can be created and linked to a certain User.
+- **Developers and Engineers**: For understanding the technical architecture and development requirements.
+- **Project Managers and Coordinators**: For planning and overseeing the system's deployment and usage.
+- **Data Analysts and Researchers**: For utilizing the data collection and visualization tools.
+- **System Administrators**: For managing and maintaining the system's infrastructure and security.
+- **Policy Makers and Stakeholders**: For evaluating the system's effectiveness and integration with national health strategies.
 
-Data Entry and Data Flow management:
+## 2. System Overview
 
-- **DataForms:** can be designed and created dynamically with fields, fields configuration such as verification, show/hide logic... etc.
+### 2.1 System Description
 
-- an Activity can have multiple forms which the teams of that activity fetch and collect from the field during their assignment execution, example
+DataRun is an advanced information system designed to streamline the management of activities and data for the National Malaria Control Program (NMCP). The system adopts a modular architecture, allowing for the dynamic configuration and management of projects, activities, teams, and assignments. It supports offline data collection through a mobile application, ensuring uninterrupted data capture in the field. DataRun facilitates data integrity, traceability, and interoperability with other health information systems through standardized APIs and adherence to interoperability standards.
 
-  - **CHV Routine Activity Forms:**
-    - Malaria Cases tests and Treatment Form, which used to enter the data a CHV visit or visits the chv.
-    - Education Sessions Form: in which a CHV record and send the details of any Community Education and awareness session he conducts.
-  
-  - **ITNs Distribution Campaign of 2020:**
-    - Form collecting the data of the ITNs Distribution for a certain village per house recorded and sent daily (Sent by Distribution Field teams based on the assigned location on the assignments).
-    - Field's Warehouse Movement of ITNs: in which a Warehouse keeper (which is represented in the system as a team) records and sent the daily warehouse movement of ITNs from the warehouse to the `Distribution Field teams`.
+### 2.2 Key Features
 
-Warehouse, Location, Team, Activity, Project and different entities in the system can be represented as Field in the Form.
+- **Modular Design**: DataRun's modular architecture separates activities, projects, teams, and assignments, promoting organization, scalability, and ease of future expansion.
+- **Dynamic Data Forms**: The system allows the creation and configuration of data forms tailored to specific activities, ensuring relevant and accurate data collection.
+- **Data Flow Management**: By specifying data entry and flow processes, DataRun enhances data integrity and traceability, critical for program monitoring and evaluation.
+- **Offline Data Collection**: The mobile application supports data collection in remote areas without internet connectivity, with a synchronization mechanism to upload data once connectivity is restored.
+- **Data Visualization Tools**: Pivot tables, charts, and dashboards are included for effective data analysis and the generation of user-friendly reports to aid in decision-making.
+- **Open Architecture (API)**: A standard API facilitates seamless data exchange with other health information systems, promoting interoperability and data integration.
+- **Interoperability**: Supports data interoperability with other health intervention areas (Eg. disease surveillance systems), quick and easy integration with existing platforms and systems such as supply chain, HRMS, LMIS, and DHIS2, facilitating interoperability and coordination at scale
+- Uses a modular and standards-based architecture
 
-**DataFormField:** different valueTypes in addition to the common types (Integer, Text, Email, SelectOne, SelectMulti, YesNo, Boolean...etc), valueTypes also include (Activity, Team, Location, Assignment) in which they can be selected if a team is sending info related to certain entity in the system.
+### 2.3 Objectives
 
-Locations, Health Facilities, Warehouses can be Called Master Entities which might be referenced and each managed in a certain module, for example
+The primary objectives of the DataRun system are:
 
-- In location Entities Module, Locations represented in one table, a tree like table, gov->district->village..., in this module maybe we can manage the locations population and the other related data to that location.
-- Health Facility Module: I thought to include this in the locations module and call the locations OrganizationUnits, but I realized they have many management and reporting ways that are not shared with the locations so we thought of putting them in their own table.
-- Warehouse Module: warehouses can have special management and reporting ways.
-
-**The System would have:**
-
-- UsersManagement capabilities, TeamsManagement capabilities, Assignments Management, Planning Management ...etc, maybe each gathered in a module.
-- standard API
-- Mobile APP.
-- Frontend which is designed using angular to manage the different modules and parts of the system, it also has `Pivot Table module`, a `Charts module`, and a `Dashboard module`, the Dashboard module in which the display of charts or tables designed by `Pivot or Charts Modules`.
-
-System Features brainstorming:
-
-**Suggestions for Improvement:**
-
-- **Security Enhancements:**  The report doesn't explicitly mention security features. Implementing robust user authentication, authorization, and data encryption is crucial for protecting sensitive patient health information.
-- **Granular User Roles and Permissions:**  Define user roles and permissions to control access to specific functionalities based on user profiles (e.g., healthcare worker, data analyst). This ensures data security and adherence to data governance principles.
-- **Audit Trail Implementation:**  Implement audit trails to track user activity and data changes for accountability purposes and troubleshooting potential data integrity issues.
-- **Integration with Mass Pro:**  The system is designed to accommodate workflow management functionalities. This might involve:
-      ***Workflow Builder:**  A user interface where program administrators can define and configure workflows for different activities.
-      ***Task Management:**  track assigned tasks, their status (pending, completed, overdue), and responsible personnel.
-      ***Data Pre-population:**  pre-populate forms with relevant data based on the workflow context (e.g., beneficiary information during ITN distribution).
-      ***Reporting:**  Generate reports to track workflow progress, identify bottlenecks, and measure overall efficiency.
-
-diagram visualizing the structure of database schema
-
-**Project Management:**
-
-```mermaid
-erDiagram
-  Project ||--o{ Activity : "project"
-  Activity ||--o{ Assignment : "activity"
-  Activity ||--o{ Team : "activity"
-  Activity ||--o{ Warehouse : "activity"
-  Activity ||--o{ DataForm : "activity"
-  Assignment ||--o{ VillageLocation : "organizationUnit"
-  Team ||--o{ Assignment : "assigned to"
-  VillageLocation ||--o{ Assignment : "assigned in"
-  District ||--o{ VillageLocation : "includes"
-```
-
-**Warehouse Management:**
-
-```mermaid
-erDiagram
-  Activity ||--o{ Warehouse : "activity"
-  Team ||--o{ WarehouseTransaction : "WarehouseTransactions"
-  Warehouse ||--o{ WarehouseTransaction : "sourceWarehouse"
-  Warehouse ||--o{ WarehouseTransaction : "WarehouseTransactions"
-  WarehouseItem ||--o{ WarehouseTransaction : "item"
-```
-
-**Team Management:**
-
-```mermaid
-erDiagram
-  User ||--o{ Team : "userInfo"
-  Activity ||--o{ Team : "userInfo"
-  Team ||--o{ Assignment : "team"
-  Team ||--o{ WarehouseTransaction : "team"
-  Team ||--o{ Warehouse : "warehouse"
-  Team ||--o{ DataFieldValue : "team"
-```
-
-**Data Entry:**
-
-```mermaid
-erDiagram
-  DataForm ||--o{ DataField : "field"
-  DataForm ||--o{ DataField : "mainField"
-  DataField ||--o{ DataOption : "option"
-  DataField ||--o{ DataFieldValue : "value"
-  Assignment ||--o{ DataFieldValue : "assignment"
-  Team ||--o{ DataFieldValue : "team"
-```
-
-**All System Schema:**
-
-```mermaid
-erDiagram
-  Project ||--o{ Activity : "project"
-  Activity ||--o{ Assignment : "activity"
-  Activity ||--o{ Team : "activity"
-  Activity ||--o{ Warehouse : "activity"
-  Activity ||--o{ DataForm : "activity"
-  Team ||--o{ DataFieldValue : "submitted"
-  Team ||--o{ Assignment : "assignments"
-  Team ||--o{ WarehouseTransaction : "WarehouseTransactions"
-  Warehouse ||--o{ WarehouseTransaction : "sourceWarehouse"
-  Warehouse ||--o{ WarehouseTransaction : "WarehouseTransactions"
-  WarehouseItem ||--o{ WarehouseTransaction : "item"
-  Assignment ||--o{ VillageLocation : "organizationUnit"
-  Assignment ||--o{ DataFieldValue : "dataFieldValue"
-  DataForm ||--o{ DataField : "field"
-  DataForm ||--o{ DataField : "mainField"
-  DataField ||--o{ DataOption : "option"
-  DataField ||--o{ DataFieldValue : "value"
-  User ||--o{ Team : "userInfo"
-```
+- **Enhance Data Management**: To improve the collection, processing, and storage of data related to NMCP activities.
+- **Support Decision-Making**: To provide tools and reports that aid in informed decision-making for malaria control and prevention efforts.
+- **Promote Interoperability**: To ensure seamless data exchange and integration with other health information systems.
+- **Enable Field Data Collection**: To facilitate offline data collection in remote areas, ensuring comprehensive data capture regardless of internet connectivity.
+- **Ensure Data Integrity**: To maintain high standards of data integrity and traceability through structured data flow management processes.
+- Ability to reuse Activities data for planning and executing other activitiess leading to lower costs and lower turnaround time, leading to better estimation and planning.
+- Provide visibility into stock availability and consumption data to enable supervisors to identify leakages/ wastages and avoid potential stock-outs 
