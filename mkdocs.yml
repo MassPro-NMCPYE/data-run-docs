@@ -87,20 +87,20 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-nav:
-  - Home: index.md
-  - 2. System Overview: system-overview.md
-  - 3. Architecture: architecture.md
-  - 4. Data Management: data-management.md
-  - 5. Database Schema: database-schema.md
-  - 6. User Management: user-management.md
-  - 7. Interoperability and Standards: interoperability-and-standards.md
-  - 8. Security: security.md
-  - 9. User Interface: user-interface.md
-  - 10. Workflow Management: workflow-management.md
-  - 11. Implementation Details: implementation-details.md
-  - 12. Future Enhancements: future-enhancements.md
-  - 13. Diagrams and Visuals: diagrams-and-visuals.md
+# nav:
+#   - Home: index.md
+#   - 2. System Overview: system-overview.md
+#   - 3. Architecture: architecture.md
+#   - 4. Data Management: data-management.md
+#   - 5. Database Schema: database-schema.md
+#   - 6. User Management: user-management.md
+#   - 7. Interoperability and Standards: interoperability-and-standards.md
+#   - 8. Security: security.md
+#   - 9. User Interface: user-interface.md
+#   - 10. Workflow Management: workflow-management.md
+#   - 11. Implementation Details: implementation-details.md
+#   - 12. Future Enhancements: future-enhancements.md
+#   - 13. Diagrams and Visuals: diagrams-and-visuals.md
 
 extra_javascript:
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
