@@ -278,7 +278,9 @@ docker compose -f src/main/docker/app.yml up -d
    - Deploy the images to your Kubernetes cluster using Kubernetes manifests.
 
 
-**All System Schema:**
+## Example Workflows Diagrams and Visuals
+
+**System Schema:**
 
 ```mermaid
 erDiagram
@@ -299,3 +301,709 @@ erDiagram
   
  
 ```
+
+**ITNs Campaign Graph**
+
+ITNsCampaignsDB Graph Diagram:
+
+```mermaid
+graph TD;
+  itnsdistributionreport -->|vcode FK|villages
+  itnsdistributionreport -->|team_id FK|distributionteams
+  itnsdistributionreport -->|dayid FK|campaigndays
+  villages -->|districtcode FK|district
+  villagetargetinfo -->|villagecode FK|villages
+  villagetargetinfo -->|orid FK|followupteam
+  villagetargetinfo -->|teamid FK|distributionteams
+  villagetargetinfo -->|whid FK|whinfo
+  villagetargetinfo -->|planneddayid FK|campaigndays
+  whinventory -->|whid FK|whinfo
+  whitnsmovementtoteamsreports -->|teamid FK|distributionteams
+  whitnsmovementtoteamsreports -->|wh FK|whinfo
+  whitnsmovementtoteamsreports -->|dayofmovementid FK|campaigndays
+
+```
+
+### Deeper Dive into ITNs Projec workflow ERD
+
+ITNsCampaignsDB ERD Diagram:
+
+```mermaid
+erDiagram
+  Campaigndays ||--o{ Itnsdistributionreport : "day distributed"
+  Campaigndays ||--o{ Villagetargetinfo : "day planned"
+  Campaigndays ||--o{ Whitnsmovementtoteamsreports : "day of movement"
+  Campaigndays {
+    int day_id PK
+    string daylabel
+    string dayar
+    timestamp daydate
+  }
+
+  Distributionteams ||--o{ Itnsdistributionreport : "sends reports"
+  Distributionteams ||--o{ Villagetargetinfo : "targets villages"
+  Distributionteams ||--o{ Whitnsmovementtoteamsreports : "receives itns"
+  Distributionteams {
+    int teamid PK
+    string teamleader
+    int orid
+  }
+
+  District ||--o{ Villages : "admin level of"
+  District {
+    int district_id_nmcp PK
+    int gov_id
+    string gov_en
+    string district_en
+  }
+
+  progressMonitoringTeam ||--o{ Villagetargetinfo : "monitoring progress of"
+  progressMonitoringTeam {
+    string orname
+    int orid PK
+  }
+
+  Itnsdistributionreport {
+
+    string _uuid PK
+    int team_id FK
+    float _location_latitude
+    float _location_longitude
+    int vcode FK
+    string distributionstatus
+    int population
+    int itns_distributed
+    timestamp _submission_time
+    timestamp entry_started
+    timestamp entry_finished
+    string settlementtype ""
+    int dayid FK
+  }
+
+  Villages ||--o{ Itnsdistributionreport : "distribution reports"
+  Villages ||--o{ Villagetargetinfo : "planned info"
+  Villages {
+    int villagecode PK
+    int districtcode
+    string subdistrict
+    string village
+    float longitude
+    float latitude
+    float elevation
+  }
+
+  Villagetargetinfo {
+    int villagecode PK
+    int whid FK
+    int teamid FK
+    int planned_day_id FK
+    float population
+    float itns
+    int orid FK
+  }
+
+  Whinfo ||--o{ Whitnsmovementtoteamsreports : "movement reports"
+  Whinfo ||--o{ Villagetargetinfo : "contains the planned quantity of"
+  Whinfo {
+    int whid PK
+    string whname
+    float itnsbeginningbalance
+  }
+
+  Whitnsmovementtoteamsreports {
+    int wh FK
+    int movement_day_id FK
+    int teamid FK
+    int receiveditns
+    string _submission__uuid PK
+    timestamp _submission__submission_time
+  }
+
+```
+
+**Data Flow and Tracking:**
+
+* **Campaign Planning:** `Campaigndays` define the campaign's timeline, while `Villagetargetinfo` captures planned ITN distribution for each village on specific days. This allows for precise planning and resource allocation.
+* **Distribution Execution:** `Distributionteams` assigned to villages update `Itnsdistributionreport` with real-time data on distribution progress, including location details, population served, ITNs distributed, and status updates. This ensures transparency and accountability.
+* **Monitoring and Evaluation:** `progressMonitoringTeam` tracks progress against targets through `Villagetargetinfo` and `Itnsdistributionreport` data. This enables timely interventions and adjustments to optimize campaign effectiveness.
+* **Inventory Management:** `Whinfo` and `Whinventory` track ITN movement from warehouses to teams via `Whitnsmovementtoteamsreports`. This ensures accurate inventory control and prevents stockouts.
+
+**Data Analysis and Insights:**
+
+By combining data from various entities, the system can generate valuable insights:
+
+* **Performance analysis:** Track ITN distribution progress across teams, districts, and villages, identifying areas requiring support or adjustments.
+* **Efficiency evaluation:** Analyze time taken for ITN delivery, identify logistical bottlenecks, and optimize distribution routes.
+* **Coverage assessment:** Ensure all target villages receive ITNs within the planned timeframe, minimizing missed populations.
+* **Resource allocation:** Allocate resources like personnel and transportation efficiently based on real-time needs and progress data.
+
+**Additional info about key entities:**
+
+**Itnsdistributionreport:** This central entity serves as the treasure trove of campaign data, capturing crucial details about each ITN distribution instance. The `distributionstatus` provides an update on the progress (e.g., completed, pending), while `population` and `itns_distributed` figures quantify the impact. The `_submission_time` records the timing of data entry, and settlement type offers additional context when the report is about a refugee gathering in the distribution site.
+
+**Villagetargetinfo:** This entity bridges the gap between villages and distribution plans. Each village record (villagecode) links to planned distribution details like the assigned warehouse (whid), responsible team (teamid), and planned distribution day (planneddayid). Target population and ITN figures (population and itns) guide resource allocation.
+
+**Whitnsmovementtoteamsreports:** These reports capture the daily flow of ITNs from warehouses to distribution teams. Each report is uniquely identified by the involved warehouse (wh), day of movement (dayofmovementid), team (teamid). The `receiveditns` figures track the quantity of ITNs transferred, providing valuable insights into distribution efficiency and potential discrepancies. Finally, the submission details (_submission__uuid and_submission__submission_time) ensure data provenance and traceability.
+
+**Warehouses:** We preplan warehouse locations for ITNs and allocate daily quantities needed for villages. Each day, teams retrieve allocated quantities from warehouses, covering villages in their planned path from the `villagetargetinfo` table. At day end, team leaders submit `itnsdistributionreport` for each village, marking it as 'Complete' if finished or 'In Progress' if not completed that day.
+
+**Overall, this DB structure facilitates the analysis of various aspects of the campaign, enabling data-driven decision making. We can:**
+
+* Identify teams or villages requiring additional support based on distribution performance.
+* Analyze factors affecting distribution status and adjust strategies accordingly.
+* Monitor progress against targets and make informed adjustments to campaign goals.
+* Optimize resource allocation based on real-time data on team performance and inventory levels.
+
+## Data-Run-Mobile
+
+### Overview
+
+Data-Run-Mobile is a Flutter application developed for the National Malaria Control Program (NMCP)
+in Yemen. The app facilitates the submission and synchronization of malaria-related data with the
+main backend system, Data-run-Api. This tool is designed to streamline data collection processes and
+ensure accurate and timely data transmission to support malaria control efforts.
+
+### Features
+
+- **Dynamic Form Download**: The app downloads forms designed on the backend, which can include
+  various question types.
+- **Question Types**: Supports Text, Number, Date, Multi Answer, Single Answer, Image, and File
+  questions.
+- **Data Submission**: Users can submit various malaria-related data directly from the app.
+- **Data Synchronization**: The app syncs submitted data with the Data-run-Api, ensuring all
+  information is up-to-date.
+- **User Authentication**: Secure login and authentication to ensure data integrity and privacy.
+- **User Management**: Quickly create users and assign them to particular teams.
+- **Offline Mode**: Allows data entry even when offline; data will be synced once the internet
+  connection is restored.
+- **User-Friendly Interface**: Simple and intuitive design to facilitate ease of use by healthcare
+  workers.
+-
+
+### Screenshots
+
+# Project Name
+
+## Screenshots
+
+| ![1](screenshots/1.png) | ![2](screenshots/2.png) | ![3](screenshots/3.png) |
+| ----------------------- | ----------------------- |-------------------------|
+| ![4](screenshots/4.png) | ![5](screenshots/5.png) | ![6](screenshots/6.png) |
+| ![7](screenshots/7.png) | ![8](screenshots/8.png) | ![9](screenshots/9.jpg) |
+| ![10](screenshots/10.png) | ![11](screenshots/11.png) |                         |
+
+
+### Usage
+
+1. **Login**: Enter your credentials to access the app.
+2. **Download Forms**: Navigate to the forms section to download the latest forms from the backend.
+3. **Data Entry**: Fill out the forms with the required data. The forms can include various types of
+   questions:
+    - **Text**: Enter textual information.
+    - **Number**: Enter numerical data.
+    - **Date**: Select dates from a date picker.
+    - **Multi Answer**: Select multiple options from a list.
+    - **Single Answer**: Select one option from a list.
+    - **Image**: Capture or upload images.
+    - **File**: Upload files.
+4. **User Management**: Create users and assign them to specific teams.
+5. **Sync Data**: Ensure your device is connected to the internet and use the sync feature to upload
+   data to the Data-run-Api.
+6. **View and Edit Submissions**: Check previous submissions and their sync status.
+
+### Sample Form:
+
+A sample of the form returned from the API end point:
+
+```json
+{
+  "paging": true,
+  "page": 0,
+  "pageCount": 1,
+  "total": 4,
+  "pageSize": 20,
+  "dataForms": [
+    {
+      "createdBy": "admin",
+      "createdDate": "2024-08-05T02:37:40.535Z",
+      "lastModifiedBy": "admin",
+      "lastModifiedDate": "2024-08-05T02:37:40.535Z",
+      "id": "66b03af41327d612461a6aac",
+      "uid": "KcsA3KETRbY",
+      "code": "CHV_PATIENTS_FORM",
+      "displayName": "CHV cases registering form",
+      "disabled": false,
+      "activity": "oBne891mA9n",
+      "version": 9,
+      "defaultLocal": "en",
+      "label": {
+        "en": "CHV cases registering form",
+        "ar": "تسجيل حالات chv"
+      },
+      "fields": [
+        {
+          "uid": "qR5sT6uV7W8",
+          "code": null,
+          "name": "locationName",
+          "description": null,
+          "type": "Text",
+          "mandatory": true,
+          "mainField": true,
+          "rules": [
+          ],
+          "listName": null,
+          "label": {
+            "en": "Village Name",
+            "ar": "اسم القرية"
+          }
+        },
+        {
+          "uid": "cD7eF8gH9I0",
+          "code": null,
+          "name": "name",
+          "description": "Name of the patient",
+          "type": "Text",
+          "mandatory": true,
+          "mainField": true,
+          "rules": [
+            {
+              "uid": "eF6676iJ5K6",
+              "field": "name",
+              "expression": "name.length >= 9",
+              "action": "Error",
+              "message": {
+                "en": "Name is not complete",
+                "ar": "ادخل الاسم الرباعي"
+              },
+              "filterInfo": null
+            }
+          ],
+          "listName": null,
+          "label": {
+            "en": "Patient name",
+            "ar": "اسم المريض"
+          }
+        },
+        {
+          "uid": "vW3xY4zA5B6",
+          "code": null,
+          "name": "visitDate",
+          "description": null,
+          "type": "Date",
+          "mandatory": true,
+          "mainField": false,
+          "rules": [
+          ],
+          "listName": null,
+          "label": {
+            "en": "Visit Date",
+            "ar": "تاريخ الزيارة"
+          }
+        },
+        {
+          "uid": "jK1lM2nO3P4",
+          "code": null,
+          "name": "age",
+          "description": "Age in Years and (months for age less than 1 year)",
+          "type": "Age",
+          "mandatory": true,
+          "mainField": false,
+          "rules": [
+            {
+              "uid": "eF66H6iJ5K6",
+              "field": "age",
+              "expression": "age <= 0 || age > 100",
+              "action": "Error",
+              "message": {
+                "en": "Age is greater than normal",
+                "ar": "العمر كبير جدا تأكد"
+              },
+              "filterInfo": null
+            }
+          ],
+          "listName": null,
+          "label": {
+            "en": "Age",
+            "ar": "العمر"
+          }
+        },
+        {
+          "uid": "xY9zA0bC1D2",
+          "code": null,
+          "name": "gender",
+          "description": null,
+          "type": "SelectOne",
+          "mandatory": true,
+          "mainField": false,
+          "rules": [
+          ],
+          "listName": "genders",
+          "label": {
+            "en": "Gender",
+            "ar": "الجنس"
+          }
+        },
+        {
+          "uid": "eF3gH4iJ5K6",
+          "code": null,
+          "name": "pregnant",
+          "description": null,
+          "type": "Boolean",
+          "mandatory": true,
+          "mainField": false,
+          "rules": [
+            {
+              "uid": "eF5gH6iJ5K6",
+              "field": "pregnant",
+              "expression": "gender == 'FEMALE' && age >= 14",
+              "action": "Show",
+              "message": null,
+              "filterInfo": null
+            }
+          ],
+          "listName": null,
+          "label": {
+            "en": "Is pregnant?",
+            "ar": "هل هي حامل؟"
+          }
+        },
+        {
+          "uid": "lM7nO8pQ9R0",
+          "code": null,
+          "name": "testResult",
+          "description": null,
+          "type": "SelectOne",
+          "mandatory": true,
+          "mainField": false,
+          "rules": [
+          ],
+          "listName": "testResults",
+          "label": {
+            "en": "Test Result",
+            "ar": "نتيجة الفحص"
+          }
+        },
+        {
+          "uid": "z33bC6dE7F8",
+          "code": null,
+          "name": "detectionType",
+          "description": null,
+          "type": "SelectOne",
+          "mandatory": true,
+          "mainField": false,
+          "rules": [
+            {
+              "uid": "eF3gH8iJ5K9",
+              "field": "detectionType",
+              "expression": "testResult == 'PF' || testResult == 'PV' || testResult == 'MIX'",
+              "action": "Show",
+              "message": null,
+              "filterInfo": null
+            }
+          ],
+          "listName": "detectionTypes",
+          "label": {
+            "en": "Detection Type",
+            "ar": "نوع الاكتشاف"
+          }
+        },
+        {
+          "uid": "zA5bDDdE7F8",
+          "code": null,
+          "name": "severity",
+          "description": null,
+          "type": "SelectOne",
+          "mandatory": true,
+          "mainField": false,
+          "rules": [
+            {
+              "uid": "eF9gH8iJ5K9",
+              "field": "severity",
+              "expression": "testResult == 'PF' || testResult == 'PV' || testResult == 'MIX'",
+              "action": "Show",
+              "message": null,
+              "filterInfo": null
+            }
+          ],
+          "listName": "severities",
+          "label": {
+            "en": "Severity",
+            "ar": "تصنيف الحالة"
+          }
+        },
+        {
+          "uid": "gH9iJ0kL1M2",
+          "code": null,
+          "name": "treatment",
+          "description": null,
+          "type": "SelectOne",
+          "mandatory": true,
+          "mainField": false,
+          "rules": [
+            {
+              "uid": "gH99J1kL1M2",
+              "field": "treatment",
+              "expression": "pregnant && (testResult == 'PF' || testResult == 'PV' || testResult == 'MIX')",
+              "action": "Filter",
+              "message": null,
+              "filterInfo": {
+                "fieldToFilter": "treatment",
+                "optionsToHide": [
+                  "TREATED",
+                  "FIRST_DOSE",
+                  "FIRST_DOSE_REFERRAL"
+                ],
+                "optionsToShow": null
+              }
+            },
+            {
+              "uid": "gH1011kL1M2",
+              "field": "treatment",
+              "expression": "severity == 'SEVERE'",
+              "action": "Filter",
+              "message": null,
+              "filterInfo": {
+                "fieldToFilter": "treatment",
+                "optionsToHide": null,
+                "optionsToShow": [
+                  "FIRST_DOSE_REFERRAL",
+                  "REFERRAL"
+                ]
+              }
+            },
+            {
+              "uid": "gH10J1kL1M2",
+              "field": "treatment",
+              "expression": "testResult == 'PF' || testResult == 'PV' || testResult == 'MIX'",
+              "action": "Show",
+              "message": null,
+              "filterInfo": null
+            }
+          ],
+          "listName": "treatments",
+          "label": {
+            "en": "Treatment",
+            "ar": "تدبير الحالة"
+          }
+        },
+        {
+          "uid": "nO3pQ4rS5T6",
+          "code": null,
+          "name": "comment",
+          "description": null,
+          "type": "LongText",
+          "mandatory": null,
+          "mainField": false,
+          "rules": [
+          ],
+          "listName": null,
+          "label": {
+            "en": "Comments",
+            "ar": "ملاحظات وتعليقات"
+          }
+        }
+      ],
+      "options": [
+        {
+          "uid": "xY1200bC1D2",
+          "form": null,
+          "listName": "genders",
+          "name": "FEMALE",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Female",
+            "ar": "أنثى"
+          }
+        },
+        {
+          "uid": "5Y1200dC5D1",
+          "form": null,
+          "listName": "genders",
+          "name": "MALE",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Male",
+            "ar": "ذكر"
+          }
+        },
+        {
+          "uid": "688888BC7D1",
+          "form": null,
+          "listName": "testResults",
+          "name": "INVALID",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Invalid",
+            "ar": "غير صالح"
+          }
+        },
+        {
+          "uid": "6Y1288dC5D1",
+          "form": null,
+          "listName": "testResults",
+          "name": "NEGATIVE",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Negative",
+            "ar": "سلبي"
+          }
+        },
+        {
+          "uid": "6Y3338dC5D1",
+          "form": null,
+          "listName": "testResults",
+          "name": "PF",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Plasmodium falciparum",
+            "ar": "بلاسموديوم فالسيباروم"
+          }
+        },
+        {
+          "uid": "10CDF77C7D1",
+          "form": null,
+          "listName": "detectionTypes",
+          "name": "ACTIVE",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Active",
+            "ar": "بحث نشط"
+          }
+        },
+        {
+          "uid": "555288dC5D1",
+          "form": null,
+          "listName": "testResults",
+          "name": "PV",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Plasmodium vivax",
+            "ar": "بلاسموديوم فيفاكس"
+          }
+        },
+        {
+          "uid": "1CD8FEBC7D1",
+          "form": null,
+          "listName": "treatments",
+          "name": "TREATED",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Treated",
+            "ar": "معالج"
+          }
+        },
+        {
+          "uid": "10CDF8BC7D1",
+          "form": null,
+          "listName": "severities",
+          "name": "SEVERE",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Severe",
+            "ar": "وخيمة"
+          }
+        },
+        {
+          "uid": "9CC8F8BC7D1",
+          "form": null,
+          "listName": "severities",
+          "name": "SIMPLE",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Simple",
+            "ar": "بسيطة"
+          }
+        },
+        {
+          "uid": "666288dC5D1",
+          "form": null,
+          "listName": "testResults",
+          "name": "MIX",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Mixed",
+            "ar": "مختلط"
+          }
+        },
+        {
+          "uid": "9CC8F66C7D1",
+          "form": null,
+          "listName": "detectionTypes",
+          "name": "REACTIVE",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Reactive",
+            "ar": "زيارة روتينية"
+          }
+        },
+        {
+          "uid": "ECDYFEBC8D1",
+          "form": null,
+          "listName": "treatments",
+          "name": "FIRST_DOSE",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "First Dose",
+            "ar": "الجرعة الأولى"
+          }
+        },
+        {
+          "uid": "ECDYF9628D1",
+          "form": null,
+          "listName": "treatments",
+          "name": "FIRST_DOSE_REFERRAL",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "First Dose & Referral",
+            "ar": "الجرعة الأولى وإحالة"
+          }
+        },
+        {
+          "uid": "9RD8FEFC7D0",
+          "form": null,
+          "listName": "treatments",
+          "name": "REFERRAL",
+          "description": null,
+          "order": 0,
+          "label": {
+            "en": "Referral",
+            "ar": "إحالة"
+          }
+        }
+      ],
+      "orgUnits": [
+        "...",
+        "..."
+      ]
+    }
+  ]
+}
+
+```
+### Contributing
+
+We welcome contributions to enhance Data-Run-Mobile. Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
