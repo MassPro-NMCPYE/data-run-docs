@@ -1,0 +1,1863 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Hamza">
+      
+      
+      
+      
+        <link rel="next" href="architecture/">
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>NMCP Yemen Info System Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/extra.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#datarun-system-nmcp-yemen" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="NMCP Yemen Info System Docs" class="md-header__button md-logo" aria-label="NMCP Yemen Info System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NMCP Yemen Info System Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              DataRun System, NMCP Yemen
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MassPro-NMCPYE/mass-pro-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MassPro-NMCPYE Docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="NMCP Yemen Info System Docs" class="md-nav__button md-logo" aria-label="NMCP Yemen Info System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    NMCP Yemen Info System Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MassPro-NMCPYE/mass-pro-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MassPro-NMCPYE Docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DataRun System, NMCP Yemen
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    DataRun System, NMCP Yemen
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Purpose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-audience" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Audience
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-datarun-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. DataRun Overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. DataRun Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-datarun-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 DataRun Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-key-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Key Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-objectives" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Objectives
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-setting-up-the-development-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Setting Up the Development Environment
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Setting Up the Development Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Prerequisites
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-repository-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Repository Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-building-for-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Building for production
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Testing
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-using-docker-to-simplify-development-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Using Docker to simplify development (optional)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-cloud-setup-google-cloud" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 Cloud Setup (Google Cloud)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-workflows-diagrams-and-visuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Workflows Diagrams and Visuals
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Example Workflows Diagrams and Visuals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deeper-dive-into-itns-projec-workflow-erd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deeper Dive into ITNs Projec workflow ERD
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-run-mobile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data-Run-Mobile
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data-Run-Mobile">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screenshots
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="data-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Data Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="database-schema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Database Schema
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="diagrams-and-visuals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. Diagrams and Visuals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="future-enhancements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Future Enhancements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="implementation-details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implementation details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="interoperability-and-standards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Interoperability and Standards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mobile-app/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data-Run-Mobile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="system-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="user-interface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. User Interface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="user-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. User Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="workflow-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Workflow Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/MassPro-NMCPYE/mass-pro-docs/edit/main/docs/index.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="datarun-system-nmcp-yemen">DataRun System, NMCP Yemen<a class="headerlink" href="#datarun-system-nmcp-yemen" title="Permanent link">&para;</a></h1>
+<h2 id="1-introduction">1. Introduction<a class="headerlink" href="#1-introduction" title="Permanent link">&para;</a></h2>
+<h3 id="11-purpose">1.1 Purpose<a class="headerlink" href="#11-purpose" title="Permanent link">&para;</a></h3>
+<p>The purpose of this document is to provide a comprehensive overview of the DataRun, developed to manage activities and data for the National Malaria Control Program (NMCP). This document serves as a foundational reference for understanding its architecture, features, and functionalities. It is intended to facilitate the ongoing development, maintenance, and enhancement of DataRun, ensuring its effective implementation and integration with other health information systems.</p>
+<h3 id="12-scope">1.2 Scope<a class="headerlink" href="#12-scope" title="Permanent link">&para;</a></h3>
+<p>This document is intended to cover DataRun in its entirety, including its design, architecture, key features, data management, database schema, user management, interoperability, security, user interface, workflow management, implementation details, and future enhancements. It provides detailed descriptions, diagrams, and visual aids to help stakeholders understand DataRun's components and their interactions.</p>
+<p><em>Note:</em> This site will serve as a centralized place where users can access up-to-date information, guides, and resources. This includes code snippets for interacting with the API; metadata descriptions; live integrations with other platforms and tools. It will evolve alongside DataRun, to ensure users can effectively leverage its capabilities. Stay tuned for regular updates as new features and improvements are added, visit <a href="https://docs.nmcpye.org">https://docs.nmcpye.org</a>.</p>
+<h3 id="13-audience">1.3 Audience<a class="headerlink" href="#13-audience" title="Permanent link">&para;</a></h3>
+<p>The intended audience for this document includes:</p>
+<ul>
+<li><strong>End Users</strong>: For understanding DataRun and how to use it.</li>
+<li><strong>Developers and Engineers</strong>: For understanding the technical architecture and development requirements.</li>
+<li><strong>Project Managers and Coordinators</strong>: For planning and overseeing the DataRun's deployment and usage.</li>
+<li><strong>Data Analysts and Researchers</strong>: For utilizing the data collection and visualization tools.</li>
+<li><strong>System Administrators</strong>: For managing and maintaining the DataRun's infrastructure and security.</li>
+<li><strong>Policy Makers and Stakeholders</strong>: For evaluating the DataRun's effectiveness and integration with national health strategies.</li>
+</ul>
+<h2 id="2-datarun-overview">2. DataRun Overview<a class="headerlink" href="#2-datarun-overview" title="Permanent link">&para;</a></h2>
+<h3 id="21-datarun-description">2.1 DataRun Description<a class="headerlink" href="#21-datarun-description" title="Permanent link">&para;</a></h3>
+<p>DataRun is an advanced information system designed to address the dynamic needs of the program's operations. It is designed mainly to support field Activities and streamlinining their data submission. DataRun adopts a modular architecture, allowing for the dynamic configuration and management of Organisation Units, Warehouses, projects, activities, teams, and assignments And intended to seamlessly integrate with other systems for health surveillance, information management, and service delivery.</p>
+<p><strong>Modular and Scalable Architecture</strong></p>
+<p>From its inception, DataRun was envisioned as a small but highly modular platform. This strategic decision allows us to build upon the core functionalities, enabling seamless integration of new features and capabilities as the program evolves. The modular design ensures that each component can operate independently while remaining interconnected, facilitating easy updates and expansions without disrupting existing operations.</p>
+<h3 id="22-key-features">2.2 Key Features<a class="headerlink" href="#22-key-features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Modular Design</strong>: DataRun's modular architecture separates activities, projects, teams, and assignments, promoting organization, scalability, and ease of future expansion.</li>
+<li><strong>Dynamic Data Management and Data Forms Creation:</strong> Efficiently handle all information related to malaria cases, treatment protocols, and program activities. DataRun also allows the creation and configuration of data forms tailored to specific activities, ensuring relevant and accurate data collection.</li>
+<li><strong>Data Flow Management</strong>: By specifying data entry and flow processes, DataRun enhances data integrity and traceability, critical for program monitoring and evaluation.</li>
+<li><strong>Data Collection</strong>: Mobile and web supporting online and offline data collection in remote areas without internet connectivity, with a synchronization mechanism to upload data once connectivity is restored.</li>
+<li><strong>Data Visualization Tools</strong>: Pivot tables, charts, and dashboards are included for effective data analysis and the generation of user-friendly reports to aid in decision-making.</li>
+<li><strong>Interoperability And Flexible Integration:</strong> With its Open Architecture (API) it can easily integrate with other systems and databases supporting data interoperability with other health intervention areas (Eg. disease surveillance systems), quick and easy integration with existing platforms and systems such as supply chain, HRMS, LMIS, and DHIS2, ODK, facilitating coordination at scale ensuring a holistic approach to the program management.</li>
+</ul>
+<p><strong>Future Growth</strong></p>
+<p>As we move forward, the DataRun's modular foundation will allow us to introduce new functionalities and adapt to emerging needs. Whether it's integrating advanced analytics, enhancing user interfaces, or incorporating new data sources, DataRun is built to grow and evolve alongside the National Malaria Program. Its modularity ensures that it will continue to meet the program's needs, providing a reliable and scalable solution for years to come.</p>
+<h3 id="23-objectives">2.3 Objectives<a class="headerlink" href="#23-objectives" title="Permanent link">&para;</a></h3>
+<p>The primary objectives of the DataRun are:</p>
+<ul>
+<li><strong>Enhance Data Management</strong>: To improve the collection, processing, and storage of data related to NMCP activities.</li>
+<li><strong>Support Decision-Making</strong>: To provide tools and reports that aid in informed decision-making for malaria control and prevention efforts.</li>
+<li><strong>Enable Field Data Collection</strong>: To facilitate offline data collection in remote areas, ensuring comprehensive data capture regardless of internet connectivity.</li>
+<li><strong>Ensure Data Integrity</strong>: To maintain high standards of data integrity and traceability through structured data flow management processes.</li>
+<li><strong>Enhance Intervention Planning</strong>: Ability to reuse Activities data for planning and executing other activitiess leading to lower costs and lower turnaround time, leading to better estimation and planning.</li>
+</ul>
+<h2 id="3-setting-up-the-development-environment">3. Setting Up the Development Environment<a class="headerlink" href="#3-setting-up-the-development-environment" title="Permanent link">&para;</a></h2>
+<p>This section provides a comprehensive guide to setting up the development environment for DataRun. The system comprises multiple repositories, each with specific dependencies and setup requirements. Follow the instructions below to get started.</p>
+<h3 id="31-prerequisites">3.1 Prerequisites<a class="headerlink" href="#31-prerequisites" title="Permanent link">&para;</a></h3>
+<p>The build system will install automatically the recommended version of Node and npm.
+- <strong>Git</strong>: For cloning repositories.
+- <strong>Docker</strong>: For containerization.
+- <strong>Java (JDK 17+)</strong>: For running Spring Boot applications.
+- <strong>Node.js (20.15)</strong>: For the Angular front-end.
+- <strong>Flutter and Dart SDKs (&gt;=3.3.0)</strong>: For developing the mobile application and the mobile SDK.</p>
+<h3 id="32-repository-setup">3.2 Repository Setup<a class="headerlink" href="#32-repository-setup" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>data-run-api (Spring Boot, PostgreSQL, MongoDB)</strong></p>
+</li>
+<li>
+<p><strong>Clone the Repository:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/MassPro-NMCPYE/data-run-api.git
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>data-run-api
+</code></pre></div></p>
+</li>
+<li><strong>Configure Application Properties:</strong>
+     Edit <code>src/main/resources/application-dev.yml</code> to match your database configurations:
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>spring:
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>   # Mongodb Configuration
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>   data:            
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>       mongodb:
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>       uri: mongodb://localhost:27017/databaseName
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>       auto-index-creation: true
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>   # PostgreSQL Configuration
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>   datasource:
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>       url: jdbc:postgresql://localhost:5432/databaseName
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>       username: dbUsername
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>       password: dbPassword
+</code></pre></div></li>
+<li>
+<p><strong>Run the Application:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>./mvnw
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>data-run-front-end (Angular)</strong></p>
+</li>
+<li><strong>Clone the Repository:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/MassPro-NMCPYE/data-run-front-end.git
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nb">cd</span><span class="w"> </span>data-run-front-end
+</code></pre></div></li>
+<li><strong>Install Dependencies:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>npm<span class="w"> </span>install
+</code></pre></div></li>
+<li><strong>Configure API Endpoint:</strong>
+     Edit the environment file (<code>webpack/environment.js</code>) to point to the API:
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kr">module</span><span class="nx">.exports</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="nx">I18N_HASH</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;generated_hash&#39;</span><span class="p">,</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="nx">SERVER_API_URL</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">,</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">  </span><span class="nx">__VERSION__</span><span class="o">:</span><span class="w"> </span><span class="kt">process.env.hasOwnProperty</span><span class="p">(</span><span class="s1">&#39;APP_VERSION&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">APP_VERSION</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;DEV&#39;</span><span class="p">,</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">  </span><span class="nx">__DEBUG_INFO_ENABLED__</span><span class="o">:</span><span class="w"> </span><span class="kt">false</span><span class="p">,</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="p">};</span>
+</code></pre></div></li>
+<li>
+<p><strong>Run the Application:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>ng<span class="w"> </span>serve
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>data-run-mobile-sdk (Dart)</strong></p>
+</li>
+<li><strong>Clone the Repository:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/MassPro-NMCPYE/data-run-mobile-sdk.git
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">cd</span><span class="w"> </span>data-run-mobile-sdk
+</code></pre></div></li>
+<li><strong>Install Dependencies:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>dart<span class="w"> </span>pub<span class="w"> </span>get
+</code></pre></div></li>
+<li><strong>data-run-mobile-app (Flutter)</strong></li>
+<li><strong>Clone the Repository:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/MassPro-NMCPYE/data-run-mobile.git
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="nb">cd</span><span class="w"> </span>data-run-mobile
+</code></pre></div></li>
+<li><strong>Install Dependencies:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>flutter<span class="w"> </span>pub<span class="w"> </span>get
+</code></pre></div></li>
+<li><strong>Run the Application:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>flutter<span class="w"> </span>run
+</code></pre></div></li>
+<li>
+<p><strong>Configure API Endpoint:</strong>
+     Update the API endpoint in your Dart SDK configuration file <code>lib/commons/constants.dart</code>:
+     ```dart
+     const String apiUrl = 'http://localhost:8080';</p>
+</li>
+<li>
+<p><strong>data-run-docs</strong></p>
+</li>
+<li><strong>Clone the Repository:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/MassPro-NMCPYE/data-run-docs.git
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nb">cd</span><span class="w"> </span>data-run-docs
+</code></pre></div></li>
+<li><strong>Install MkDocs and mkdocs-materia:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs
+<a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-materia
+</code></pre></div></li>
+<li><strong>Serve the Documentation:</strong>
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>mkdocs<span class="w"> </span>serve
+</code></pre></div></li>
+</ol>
+<h3 id="34-building-for-production">3.4 Building for production<a class="headerlink" href="#34-building-for-production" title="Permanent link">&para;</a></h3>
+<h4 id="341-packaging-as-jar">3.4.1 Packaging as jar<a class="headerlink" href="#341-packaging-as-jar" title="Permanent link">&para;</a></h4>
+<p>To build the final jar and optimize the dataRunApi application for production, run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>./mvnw -Pprod clean verify
+</code></pre></div>
+<p>To ensure everything worked, run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>java -jar target/*.jar
+</code></pre></div>
+<h4 id="342-packaging-as-war">3.4.2 Packaging as war<a class="headerlink" href="#342-packaging-as-war" title="Permanent link">&para;</a></h4>
+<p>To package your application as a war in order to deploy it to an application server, run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>./mvnw -Pprod,war clean verify
+</code></pre></div>
+<h3 id="35-testing">3.5 Testing<a class="headerlink" href="#35-testing" title="Permanent link">&para;</a></h3>
+<h4 id="spring-boot-tests">Spring Boot tests<a class="headerlink" href="#spring-boot-tests" title="Permanent link">&para;</a></h4>
+<p>To launch your application's tests, run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>./mvnw verify
+</code></pre></div>
+<h3 id="36-using-docker-to-simplify-development-optional">3.6 Using Docker to simplify development (optional)<a class="headerlink" href="#36-using-docker-to-simplify-development-optional" title="Permanent link">&para;</a></h3>
+<p>You can use Docker to improve your development experience. A number of docker-compose configuration are available in the <a href="src/main/docker">src/main/docker</a> folder to launch required third party services.</p>
+<p>For example, to start a postgresql database in a docker container, run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>docker compose -f src/main/docker/postgresql.yml up -d
+</code></pre></div>
+<p>To stop it and remove the container, run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>docker compose -f src/main/docker/postgresql.yml down
+</code></pre></div>
+<p>to start a mongodb database in a docker container, run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a>docker compose -f src/main/docker/mongodb.yml up -d
+</code></pre></div>
+<p>To stop it and remove the container, run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>docker compose -f src/main/docker/mongodb.yml down
+</code></pre></div>
+<p>You can also fully dockerize your application and all the services that it depends on.
+To achieve this, first build a docker image of your app by running:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>npm run java:docker
+</code></pre></div>
+<p>Or build a arm64 docker image when using an arm64 processor os like MacOS with M1 processor family running:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a>npm run java:docker:arm64
+</code></pre></div>
+<p>Then run:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a>docker compose -f src/main/docker/app.yml up -d
+</code></pre></div>
+<h3 id="37-cloud-setup-google-cloud">3.7 Cloud Setup (Google Cloud)<a class="headerlink" href="#37-cloud-setup-google-cloud" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Set Up Google Cloud Account:</strong></li>
+<li>
+<p>Sign up for a Google Cloud account and create a new project.</p>
+</li>
+<li>
+<p><strong>Google Cloud SDK:</strong></p>
+</li>
+<li>
+<p>Install the Google Cloud SDK on your local machine.
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>curl<span class="w"> </span>https://sdk.cloud.google.com<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+<a id="__codelineno-26-2" name="__codelineno-26-2" href="#__codelineno-26-2"></a><span class="nb">exec</span><span class="w"> </span>-l<span class="w"> </span><span class="nv">$SHELL</span>
+<a id="__codelineno-26-3" name="__codelineno-26-3" href="#__codelineno-26-3"></a>gcloud<span class="w"> </span>init
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Set Up Kubernetes Cluster:</strong></p>
+</li>
+<li>
+<p>Create a Kubernetes cluster for container orchestration.
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a>gcloud<span class="w"> </span>container<span class="w"> </span>clusters<span class="w"> </span>create<span class="w"> </span>your-cluster-name
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Deploying Containers:</strong></p>
+</li>
+<li>Build Docker images for your services and push them to Google Container Registry.
+     <div class="highlight"><pre><span></span><code><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>gcr.io/your-project-id/data-run-api<span class="w"> </span>.
+<a id="__codelineno-28-2" name="__codelineno-28-2" href="#__codelineno-28-2"></a>docker<span class="w"> </span>push<span class="w"> </span>gcr.io/your-project-id/data-run-api
+</code></pre></div></li>
+<li>Deploy the images to your Kubernetes cluster using Kubernetes manifests.</li>
+</ol>
+<h2 id="example-workflows-diagrams-and-visuals">Example Workflows Diagrams and Visuals<a class="headerlink" href="#example-workflows-diagrams-and-visuals" title="Permanent link">&para;</a></h2>
+<p><strong>System Schema:</strong></p>
+<pre class="mermaid"><code>erDiagram
+  Project ||--o{ Activity : "project"
+  Activity ||--o{ Assignment : "activity"
+  Activity ||--o{ Team : "activity"
+  Activity ||--o{ Warehouse : "activity"
+  Activity ||--o{ DataForm : "activity"
+  Team ||--o{ Assignment : "assignments"
+  Assignment ||--o{ organizationUnit : "organizationUnit"
+  User ||--o{ Team : "userInfo"
+
+  ProjectManagement
+  UserManagement
+  DataCollection
+  Reporting
+  FileService
+
+</code></pre>
+<p><strong>ITNs Campaign Graph</strong></p>
+<p>ITNsCampaignsDB Graph Diagram:</p>
+<pre class="mermaid"><code>graph TD;
+  itnsdistributionreport --&gt;|vcode FK|villages
+  itnsdistributionreport --&gt;|team_id FK|distributionteams
+  itnsdistributionreport --&gt;|dayid FK|campaigndays
+  villages --&gt;|districtcode FK|district
+  villagetargetinfo --&gt;|villagecode FK|villages
+  villagetargetinfo --&gt;|orid FK|followupteam
+  villagetargetinfo --&gt;|teamid FK|distributionteams
+  villagetargetinfo --&gt;|whid FK|whinfo
+  villagetargetinfo --&gt;|planneddayid FK|campaigndays
+  whinventory --&gt;|whid FK|whinfo
+  whitnsmovementtoteamsreports --&gt;|teamid FK|distributionteams
+  whitnsmovementtoteamsreports --&gt;|wh FK|whinfo
+  whitnsmovementtoteamsreports --&gt;|dayofmovementid FK|campaigndays
+</code></pre>
+<h3 id="deeper-dive-into-itns-projec-workflow-erd">Deeper Dive into ITNs Projec workflow ERD<a class="headerlink" href="#deeper-dive-into-itns-projec-workflow-erd" title="Permanent link">&para;</a></h3>
+<p>ITNsCampaignsDB ERD Diagram:</p>
+<pre class="mermaid"><code>erDiagram
+  Campaigndays ||--o{ Itnsdistributionreport : "day distributed"
+  Campaigndays ||--o{ Villagetargetinfo : "day planned"
+  Campaigndays ||--o{ Whitnsmovementtoteamsreports : "day of movement"
+  Campaigndays {
+    int day_id PK
+    string daylabel
+    string dayar
+    timestamp daydate
+  }
+
+  Distributionteams ||--o{ Itnsdistributionreport : "sends reports"
+  Distributionteams ||--o{ Villagetargetinfo : "targets villages"
+  Distributionteams ||--o{ Whitnsmovementtoteamsreports : "receives itns"
+  Distributionteams {
+    int teamid PK
+    string teamleader
+    int orid
+  }
+
+  District ||--o{ Villages : "admin level of"
+  District {
+    int district_id_nmcp PK
+    int gov_id
+    string gov_en
+    string district_en
+  }
+
+  progressMonitoringTeam ||--o{ Villagetargetinfo : "monitoring progress of"
+  progressMonitoringTeam {
+    string orname
+    int orid PK
+  }
+
+  Itnsdistributionreport {
+
+    string _uuid PK
+    int team_id FK
+    float _location_latitude
+    float _location_longitude
+    int vcode FK
+    string distributionstatus
+    int population
+    int itns_distributed
+    timestamp _submission_time
+    timestamp entry_started
+    timestamp entry_finished
+    string settlementtype ""
+    int dayid FK
+  }
+
+  Villages ||--o{ Itnsdistributionreport : "distribution reports"
+  Villages ||--o{ Villagetargetinfo : "planned info"
+  Villages {
+    int villagecode PK
+    int districtcode
+    string subdistrict
+    string village
+    float longitude
+    float latitude
+    float elevation
+  }
+
+  Villagetargetinfo {
+    int villagecode PK
+    int whid FK
+    int teamid FK
+    int planned_day_id FK
+    float population
+    float itns
+    int orid FK
+  }
+
+  Whinfo ||--o{ Whitnsmovementtoteamsreports : "movement reports"
+  Whinfo ||--o{ Villagetargetinfo : "contains the planned quantity of"
+  Whinfo {
+    int whid PK
+    string whname
+    float itnsbeginningbalance
+  }
+
+  Whitnsmovementtoteamsreports {
+    int wh FK
+    int movement_day_id FK
+    int teamid FK
+    int receiveditns
+    string _submission__uuid PK
+    timestamp _submission__submission_time
+  }
+</code></pre>
+<p><strong>Data Flow and Tracking:</strong></p>
+<ul>
+<li><strong>Campaign Planning:</strong> <code>Campaigndays</code> define the campaign's timeline, while <code>Villagetargetinfo</code> captures planned ITN distribution for each village on specific days. This allows for precise planning and resource allocation.</li>
+<li><strong>Distribution Execution:</strong> <code>Distributionteams</code> assigned to villages update <code>Itnsdistributionreport</code> with real-time data on distribution progress, including location details, population served, ITNs distributed, and status updates. This ensures transparency and accountability.</li>
+<li><strong>Monitoring and Evaluation:</strong> <code>progressMonitoringTeam</code> tracks progress against targets through <code>Villagetargetinfo</code> and <code>Itnsdistributionreport</code> data. This enables timely interventions and adjustments to optimize campaign effectiveness.</li>
+<li><strong>Inventory Management:</strong> <code>Whinfo</code> and <code>Whinventory</code> track ITN movement from warehouses to teams via <code>Whitnsmovementtoteamsreports</code>. This ensures accurate inventory control and prevents stockouts.</li>
+</ul>
+<p><strong>Data Analysis and Insights:</strong></p>
+<p>By combining data from various entities, the system can generate valuable insights:</p>
+<ul>
+<li><strong>Performance analysis:</strong> Track ITN distribution progress across teams, districts, and villages, identifying areas requiring support or adjustments.</li>
+<li><strong>Efficiency evaluation:</strong> Analyze time taken for ITN delivery, identify logistical bottlenecks, and optimize distribution routes.</li>
+<li><strong>Coverage assessment:</strong> Ensure all target villages receive ITNs within the planned timeframe, minimizing missed populations.</li>
+<li><strong>Resource allocation:</strong> Allocate resources like personnel and transportation efficiently based on real-time needs and progress data.</li>
+</ul>
+<p><strong>Additional info about key entities:</strong></p>
+<p><strong>Itnsdistributionreport:</strong> This central entity serves as the treasure trove of campaign data, capturing crucial details about each ITN distribution instance. The <code>distributionstatus</code> provides an update on the progress (e.g., completed, pending), while <code>population</code> and <code>itns_distributed</code> figures quantify the impact. The <code>_submission_time</code> records the timing of data entry, and settlement type offers additional context when the report is about a refugee gathering in the distribution site.</p>
+<p><strong>Villagetargetinfo:</strong> This entity bridges the gap between villages and distribution plans. Each village record (villagecode) links to planned distribution details like the assigned warehouse (whid), responsible team (teamid), and planned distribution day (planneddayid). Target population and ITN figures (population and itns) guide resource allocation.</p>
+<p><strong>Whitnsmovementtoteamsreports:</strong> These reports capture the daily flow of ITNs from warehouses to distribution teams. Each report is uniquely identified by the involved warehouse (wh), day of movement (dayofmovementid), team (teamid). The <code>receiveditns</code> figures track the quantity of ITNs transferred, providing valuable insights into distribution efficiency and potential discrepancies. Finally, the submission details (_submission__uuid and_submission__submission_time) ensure data provenance and traceability.</p>
+<p><strong>Warehouses:</strong> We preplan warehouse locations for ITNs and allocate daily quantities needed for villages. Each day, teams retrieve allocated quantities from warehouses, covering villages in their planned path from the <code>villagetargetinfo</code> table. At day end, team leaders submit <code>itnsdistributionreport</code> for each village, marking it as 'Complete' if finished or 'In Progress' if not completed that day.</p>
+<p><strong>Overall, this DB structure facilitates the analysis of various aspects of the campaign, enabling data-driven decision making. We can:</strong></p>
+<ul>
+<li>Identify teams or villages requiring additional support based on distribution performance.</li>
+<li>Analyze factors affecting distribution status and adjust strategies accordingly.</li>
+<li>Monitor progress against targets and make informed adjustments to campaign goals.</li>
+<li>Optimize resource allocation based on real-time data on team performance and inventory levels.</li>
+</ul>
+<h2 id="data-run-mobile">Data-Run-Mobile<a class="headerlink" href="#data-run-mobile" title="Permanent link">&para;</a></h2>
+<h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
+<p>Data-Run-Mobile is a Flutter application developed for the National Malaria Control Program (NMCP)
+in Yemen. The app facilitates the submission and synchronization of malaria-related data with the
+main backend system, Data-run-Api. This tool is designed to streamline data collection processes and
+ensure accurate and timely data transmission to support malaria control efforts.</p>
+<h3 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Dynamic Form Download</strong>: The app downloads forms designed on the backend, which can include
+  various question types.</li>
+<li><strong>Question Types</strong>: Supports Text, Number, Date, Multi Answer, Single Answer, Image, and File
+  questions.</li>
+<li><strong>Data Submission</strong>: Users can submit various malaria-related data directly from the app.</li>
+<li><strong>Data Synchronization</strong>: The app syncs submitted data with the Data-run-Api, ensuring all
+  information is up-to-date.</li>
+<li><strong>User Authentication</strong>: Secure login and authentication to ensure data integrity and privacy.</li>
+<li><strong>User Management</strong>: Quickly create users and assign them to particular teams.</li>
+<li><strong>Offline Mode</strong>: Allows data entry even when offline; data will be synced once the internet
+  connection is restored.</li>
+<li><strong>User-Friendly Interface</strong>: Simple and intuitive design to facilitate ease of use by healthcare
+  workers.
+-</li>
+</ul>
+<h3 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h3>
+<h1 id="project-name">Project Name<a class="headerlink" href="#project-name" title="Permanent link">&para;</a></h1>
+<h2 id="screenshots_1">Screenshots<a class="headerlink" href="#screenshots_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><img alt="1" src="screenshots/1.png" /></th>
+<th><img alt="2" src="screenshots/2.png" /></th>
+<th><img alt="3" src="screenshots/3.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="4" src="screenshots/4.png" /></td>
+<td><img alt="5" src="screenshots/5.png" /></td>
+<td><img alt="6" src="screenshots/6.png" /></td>
+</tr>
+<tr>
+<td><img alt="7" src="screenshots/7.png" /></td>
+<td><img alt="8" src="screenshots/8.png" /></td>
+<td><img alt="9" src="screenshots/9.jpg" /></td>
+</tr>
+<tr>
+<td><img alt="10" src="screenshots/10.png" /></td>
+<td><img alt="11" src="screenshots/11.png" /></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Login</strong>: Enter your credentials to access the app.</li>
+<li><strong>Download Forms</strong>: Navigate to the forms section to download the latest forms from the backend.</li>
+<li><strong>Data Entry</strong>: Fill out the forms with the required data. The forms can include various types of
+   questions:<ul>
+<li><strong>Text</strong>: Enter textual information.</li>
+<li><strong>Number</strong>: Enter numerical data.</li>
+<li><strong>Date</strong>: Select dates from a date picker.</li>
+<li><strong>Multi Answer</strong>: Select multiple options from a list.</li>
+<li><strong>Single Answer</strong>: Select one option from a list.</li>
+<li><strong>Image</strong>: Capture or upload images.</li>
+<li><strong>File</strong>: Upload files.</li>
+</ul>
+</li>
+<li><strong>User Management</strong>: Create users and assign them to specific teams.</li>
+<li><strong>Sync Data</strong>: Ensure your device is connected to the internet and use the sync feature to upload
+   data to the Data-run-Api.</li>
+<li><strong>View and Edit Submissions</strong>: Check previous submissions and their sync status.</li>
+</ol>
+<h3 id="sample-form">Sample Form:<a class="headerlink" href="#sample-form" title="Permanent link">&para;</a></h3>
+<p>A sample of the form returned from the API end point:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="p">{</span>
+<a id="__codelineno-29-2" name="__codelineno-29-2" href="#__codelineno-29-2"></a><span class="w">  </span><span class="nt">&quot;paging&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-3" name="__codelineno-29-3" href="#__codelineno-29-3"></a><span class="w">  </span><span class="nt">&quot;page&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-4" name="__codelineno-29-4" href="#__codelineno-29-4"></a><span class="w">  </span><span class="nt">&quot;pageCount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-29-5" name="__codelineno-29-5" href="#__codelineno-29-5"></a><span class="w">  </span><span class="nt">&quot;total&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<a id="__codelineno-29-6" name="__codelineno-29-6" href="#__codelineno-29-6"></a><span class="w">  </span><span class="nt">&quot;pageSize&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span>
+<a id="__codelineno-29-7" name="__codelineno-29-7" href="#__codelineno-29-7"></a><span class="w">  </span><span class="nt">&quot;dataForms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-8" name="__codelineno-29-8" href="#__codelineno-29-8"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-29-9" name="__codelineno-29-9" href="#__codelineno-29-9"></a><span class="w">      </span><span class="nt">&quot;createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-10" name="__codelineno-29-10" href="#__codelineno-29-10"></a><span class="w">      </span><span class="nt">&quot;createdDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-08-05T02:37:40.535Z&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-11" name="__codelineno-29-11" href="#__codelineno-29-11"></a><span class="w">      </span><span class="nt">&quot;lastModifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-12" name="__codelineno-29-12" href="#__codelineno-29-12"></a><span class="w">      </span><span class="nt">&quot;lastModifiedDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-08-05T02:37:40.535Z&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-13" name="__codelineno-29-13" href="#__codelineno-29-13"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;66b03af41327d612461a6aac&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-14" name="__codelineno-29-14" href="#__codelineno-29-14"></a><span class="w">      </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;KcsA3KETRbY&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-15" name="__codelineno-29-15" href="#__codelineno-29-15"></a><span class="w">      </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CHV_PATIENTS_FORM&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-16" name="__codelineno-29-16" href="#__codelineno-29-16"></a><span class="w">      </span><span class="nt">&quot;displayName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CHV cases registering form&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-17" name="__codelineno-29-17" href="#__codelineno-29-17"></a><span class="w">      </span><span class="nt">&quot;disabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-29-18" name="__codelineno-29-18" href="#__codelineno-29-18"></a><span class="w">      </span><span class="nt">&quot;activity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;oBne891mA9n&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-19" name="__codelineno-29-19" href="#__codelineno-29-19"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span>
+<a id="__codelineno-29-20" name="__codelineno-29-20" href="#__codelineno-29-20"></a><span class="w">      </span><span class="nt">&quot;defaultLocal&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-21" name="__codelineno-29-21" href="#__codelineno-29-21"></a><span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-22" name="__codelineno-29-22" href="#__codelineno-29-22"></a><span class="w">        </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CHV cases registering form&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-23" name="__codelineno-29-23" href="#__codelineno-29-23"></a><span class="w">        </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;تسجيل حالات chv&quot;</span>
+<a id="__codelineno-29-24" name="__codelineno-29-24" href="#__codelineno-29-24"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-29-25" name="__codelineno-29-25" href="#__codelineno-29-25"></a><span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-26" name="__codelineno-29-26" href="#__codelineno-29-26"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-27" name="__codelineno-29-27" href="#__codelineno-29-27"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;qR5sT6uV7W8&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-28" name="__codelineno-29-28" href="#__codelineno-29-28"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-29" name="__codelineno-29-29" href="#__codelineno-29-29"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;locationName&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-30" name="__codelineno-29-30" href="#__codelineno-29-30"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-31" name="__codelineno-29-31" href="#__codelineno-29-31"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Text&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-32" name="__codelineno-29-32" href="#__codelineno-29-32"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-33" name="__codelineno-29-33" href="#__codelineno-29-33"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-34" name="__codelineno-29-34" href="#__codelineno-29-34"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-35" name="__codelineno-29-35" href="#__codelineno-29-35"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-29-36" name="__codelineno-29-36" href="#__codelineno-29-36"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-37" name="__codelineno-29-37" href="#__codelineno-29-37"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-38" name="__codelineno-29-38" href="#__codelineno-29-38"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Village Name&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-39" name="__codelineno-29-39" href="#__codelineno-29-39"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;اسم القرية&quot;</span>
+<a id="__codelineno-29-40" name="__codelineno-29-40" href="#__codelineno-29-40"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-41" name="__codelineno-29-41" href="#__codelineno-29-41"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-42" name="__codelineno-29-42" href="#__codelineno-29-42"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-43" name="__codelineno-29-43" href="#__codelineno-29-43"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cD7eF8gH9I0&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-44" name="__codelineno-29-44" href="#__codelineno-29-44"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-45" name="__codelineno-29-45" href="#__codelineno-29-45"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;name&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-46" name="__codelineno-29-46" href="#__codelineno-29-46"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Name of the patient&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-47" name="__codelineno-29-47" href="#__codelineno-29-47"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Text&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-48" name="__codelineno-29-48" href="#__codelineno-29-48"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-49" name="__codelineno-29-49" href="#__codelineno-29-49"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-50" name="__codelineno-29-50" href="#__codelineno-29-50"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-51" name="__codelineno-29-51" href="#__codelineno-29-51"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-29-52" name="__codelineno-29-52" href="#__codelineno-29-52"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF6676iJ5K6&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-53" name="__codelineno-29-53" href="#__codelineno-29-53"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;name&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-54" name="__codelineno-29-54" href="#__codelineno-29-54"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;name.length &gt;= 9&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-55" name="__codelineno-29-55" href="#__codelineno-29-55"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Error&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-56" name="__codelineno-29-56" href="#__codelineno-29-56"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-57" name="__codelineno-29-57" href="#__codelineno-29-57"></a><span class="w">                </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Name is not complete&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-58" name="__codelineno-29-58" href="#__codelineno-29-58"></a><span class="w">                </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ادخل الاسم الرباعي&quot;</span>
+<a id="__codelineno-29-59" name="__codelineno-29-59" href="#__codelineno-29-59"></a><span class="w">              </span><span class="p">},</span>
+<a id="__codelineno-29-60" name="__codelineno-29-60" href="#__codelineno-29-60"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-29-61" name="__codelineno-29-61" href="#__codelineno-29-61"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-29-62" name="__codelineno-29-62" href="#__codelineno-29-62"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-29-63" name="__codelineno-29-63" href="#__codelineno-29-63"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-64" name="__codelineno-29-64" href="#__codelineno-29-64"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-65" name="__codelineno-29-65" href="#__codelineno-29-65"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Patient name&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-66" name="__codelineno-29-66" href="#__codelineno-29-66"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;اسم المريض&quot;</span>
+<a id="__codelineno-29-67" name="__codelineno-29-67" href="#__codelineno-29-67"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-68" name="__codelineno-29-68" href="#__codelineno-29-68"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-69" name="__codelineno-29-69" href="#__codelineno-29-69"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-70" name="__codelineno-29-70" href="#__codelineno-29-70"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;vW3xY4zA5B6&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-71" name="__codelineno-29-71" href="#__codelineno-29-71"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-72" name="__codelineno-29-72" href="#__codelineno-29-72"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;visitDate&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-73" name="__codelineno-29-73" href="#__codelineno-29-73"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-74" name="__codelineno-29-74" href="#__codelineno-29-74"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Date&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-75" name="__codelineno-29-75" href="#__codelineno-29-75"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-76" name="__codelineno-29-76" href="#__codelineno-29-76"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-29-77" name="__codelineno-29-77" href="#__codelineno-29-77"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-78" name="__codelineno-29-78" href="#__codelineno-29-78"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-29-79" name="__codelineno-29-79" href="#__codelineno-29-79"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-80" name="__codelineno-29-80" href="#__codelineno-29-80"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-81" name="__codelineno-29-81" href="#__codelineno-29-81"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Visit Date&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-82" name="__codelineno-29-82" href="#__codelineno-29-82"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;تاريخ الزيارة&quot;</span>
+<a id="__codelineno-29-83" name="__codelineno-29-83" href="#__codelineno-29-83"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-84" name="__codelineno-29-84" href="#__codelineno-29-84"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-85" name="__codelineno-29-85" href="#__codelineno-29-85"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-86" name="__codelineno-29-86" href="#__codelineno-29-86"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;jK1lM2nO3P4&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-87" name="__codelineno-29-87" href="#__codelineno-29-87"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-88" name="__codelineno-29-88" href="#__codelineno-29-88"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;age&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-89" name="__codelineno-29-89" href="#__codelineno-29-89"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Age in Years and (months for age less than 1 year)&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-90" name="__codelineno-29-90" href="#__codelineno-29-90"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Age&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-91" name="__codelineno-29-91" href="#__codelineno-29-91"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-92" name="__codelineno-29-92" href="#__codelineno-29-92"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-29-93" name="__codelineno-29-93" href="#__codelineno-29-93"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-94" name="__codelineno-29-94" href="#__codelineno-29-94"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-29-95" name="__codelineno-29-95" href="#__codelineno-29-95"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF66H6iJ5K6&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-96" name="__codelineno-29-96" href="#__codelineno-29-96"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;age&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-97" name="__codelineno-29-97" href="#__codelineno-29-97"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;age &lt;= 0 || age &gt; 100&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-98" name="__codelineno-29-98" href="#__codelineno-29-98"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Error&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-99" name="__codelineno-29-99" href="#__codelineno-29-99"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-100" name="__codelineno-29-100" href="#__codelineno-29-100"></a><span class="w">                </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Age is greater than normal&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-101" name="__codelineno-29-101" href="#__codelineno-29-101"></a><span class="w">                </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;العمر كبير جدا تأكد&quot;</span>
+<a id="__codelineno-29-102" name="__codelineno-29-102" href="#__codelineno-29-102"></a><span class="w">              </span><span class="p">},</span>
+<a id="__codelineno-29-103" name="__codelineno-29-103" href="#__codelineno-29-103"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-29-104" name="__codelineno-29-104" href="#__codelineno-29-104"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-29-105" name="__codelineno-29-105" href="#__codelineno-29-105"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-29-106" name="__codelineno-29-106" href="#__codelineno-29-106"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-107" name="__codelineno-29-107" href="#__codelineno-29-107"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-108" name="__codelineno-29-108" href="#__codelineno-29-108"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Age&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-109" name="__codelineno-29-109" href="#__codelineno-29-109"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;العمر&quot;</span>
+<a id="__codelineno-29-110" name="__codelineno-29-110" href="#__codelineno-29-110"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-111" name="__codelineno-29-111" href="#__codelineno-29-111"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-112" name="__codelineno-29-112" href="#__codelineno-29-112"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-113" name="__codelineno-29-113" href="#__codelineno-29-113"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xY9zA0bC1D2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-114" name="__codelineno-29-114" href="#__codelineno-29-114"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-115" name="__codelineno-29-115" href="#__codelineno-29-115"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gender&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-116" name="__codelineno-29-116" href="#__codelineno-29-116"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-117" name="__codelineno-29-117" href="#__codelineno-29-117"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SelectOne&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-118" name="__codelineno-29-118" href="#__codelineno-29-118"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-119" name="__codelineno-29-119" href="#__codelineno-29-119"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-29-120" name="__codelineno-29-120" href="#__codelineno-29-120"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-121" name="__codelineno-29-121" href="#__codelineno-29-121"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-29-122" name="__codelineno-29-122" href="#__codelineno-29-122"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;genders&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-123" name="__codelineno-29-123" href="#__codelineno-29-123"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-124" name="__codelineno-29-124" href="#__codelineno-29-124"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-125" name="__codelineno-29-125" href="#__codelineno-29-125"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;الجنس&quot;</span>
+<a id="__codelineno-29-126" name="__codelineno-29-126" href="#__codelineno-29-126"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-127" name="__codelineno-29-127" href="#__codelineno-29-127"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-128" name="__codelineno-29-128" href="#__codelineno-29-128"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-129" name="__codelineno-29-129" href="#__codelineno-29-129"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF3gH4iJ5K6&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-130" name="__codelineno-29-130" href="#__codelineno-29-130"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-131" name="__codelineno-29-131" href="#__codelineno-29-131"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pregnant&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-132" name="__codelineno-29-132" href="#__codelineno-29-132"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-133" name="__codelineno-29-133" href="#__codelineno-29-133"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Boolean&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-134" name="__codelineno-29-134" href="#__codelineno-29-134"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-135" name="__codelineno-29-135" href="#__codelineno-29-135"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-29-136" name="__codelineno-29-136" href="#__codelineno-29-136"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-137" name="__codelineno-29-137" href="#__codelineno-29-137"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-29-138" name="__codelineno-29-138" href="#__codelineno-29-138"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF5gH6iJ5K6&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-139" name="__codelineno-29-139" href="#__codelineno-29-139"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pregnant&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-140" name="__codelineno-29-140" href="#__codelineno-29-140"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gender == &#39;FEMALE&#39; &amp;&amp; age &gt;= 14&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-141" name="__codelineno-29-141" href="#__codelineno-29-141"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Show&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-142" name="__codelineno-29-142" href="#__codelineno-29-142"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-143" name="__codelineno-29-143" href="#__codelineno-29-143"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-29-144" name="__codelineno-29-144" href="#__codelineno-29-144"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-29-145" name="__codelineno-29-145" href="#__codelineno-29-145"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-29-146" name="__codelineno-29-146" href="#__codelineno-29-146"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-147" name="__codelineno-29-147" href="#__codelineno-29-147"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-148" name="__codelineno-29-148" href="#__codelineno-29-148"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Is pregnant?&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-149" name="__codelineno-29-149" href="#__codelineno-29-149"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;هل هي حامل؟&quot;</span>
+<a id="__codelineno-29-150" name="__codelineno-29-150" href="#__codelineno-29-150"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-151" name="__codelineno-29-151" href="#__codelineno-29-151"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-152" name="__codelineno-29-152" href="#__codelineno-29-152"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-153" name="__codelineno-29-153" href="#__codelineno-29-153"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;lM7nO8pQ9R0&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-154" name="__codelineno-29-154" href="#__codelineno-29-154"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-155" name="__codelineno-29-155" href="#__codelineno-29-155"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResult&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-156" name="__codelineno-29-156" href="#__codelineno-29-156"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-157" name="__codelineno-29-157" href="#__codelineno-29-157"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SelectOne&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-158" name="__codelineno-29-158" href="#__codelineno-29-158"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-159" name="__codelineno-29-159" href="#__codelineno-29-159"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-29-160" name="__codelineno-29-160" href="#__codelineno-29-160"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-161" name="__codelineno-29-161" href="#__codelineno-29-161"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-29-162" name="__codelineno-29-162" href="#__codelineno-29-162"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-163" name="__codelineno-29-163" href="#__codelineno-29-163"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-164" name="__codelineno-29-164" href="#__codelineno-29-164"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Test Result&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-165" name="__codelineno-29-165" href="#__codelineno-29-165"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;نتيجة الفحص&quot;</span>
+<a id="__codelineno-29-166" name="__codelineno-29-166" href="#__codelineno-29-166"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-167" name="__codelineno-29-167" href="#__codelineno-29-167"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-168" name="__codelineno-29-168" href="#__codelineno-29-168"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-169" name="__codelineno-29-169" href="#__codelineno-29-169"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;z33bC6dE7F8&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-170" name="__codelineno-29-170" href="#__codelineno-29-170"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-171" name="__codelineno-29-171" href="#__codelineno-29-171"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;detectionType&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-172" name="__codelineno-29-172" href="#__codelineno-29-172"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-173" name="__codelineno-29-173" href="#__codelineno-29-173"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SelectOne&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-174" name="__codelineno-29-174" href="#__codelineno-29-174"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-175" name="__codelineno-29-175" href="#__codelineno-29-175"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-29-176" name="__codelineno-29-176" href="#__codelineno-29-176"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-177" name="__codelineno-29-177" href="#__codelineno-29-177"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-29-178" name="__codelineno-29-178" href="#__codelineno-29-178"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF3gH8iJ5K9&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-179" name="__codelineno-29-179" href="#__codelineno-29-179"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;detectionType&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-180" name="__codelineno-29-180" href="#__codelineno-29-180"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResult == &#39;PF&#39; || testResult == &#39;PV&#39; || testResult == &#39;MIX&#39;&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-181" name="__codelineno-29-181" href="#__codelineno-29-181"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Show&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-182" name="__codelineno-29-182" href="#__codelineno-29-182"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-183" name="__codelineno-29-183" href="#__codelineno-29-183"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-29-184" name="__codelineno-29-184" href="#__codelineno-29-184"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-29-185" name="__codelineno-29-185" href="#__codelineno-29-185"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-29-186" name="__codelineno-29-186" href="#__codelineno-29-186"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;detectionTypes&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-187" name="__codelineno-29-187" href="#__codelineno-29-187"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-188" name="__codelineno-29-188" href="#__codelineno-29-188"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Detection Type&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-189" name="__codelineno-29-189" href="#__codelineno-29-189"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;نوع الاكتشاف&quot;</span>
+<a id="__codelineno-29-190" name="__codelineno-29-190" href="#__codelineno-29-190"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-191" name="__codelineno-29-191" href="#__codelineno-29-191"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-192" name="__codelineno-29-192" href="#__codelineno-29-192"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-193" name="__codelineno-29-193" href="#__codelineno-29-193"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;zA5bDDdE7F8&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-194" name="__codelineno-29-194" href="#__codelineno-29-194"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-195" name="__codelineno-29-195" href="#__codelineno-29-195"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severity&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-196" name="__codelineno-29-196" href="#__codelineno-29-196"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-197" name="__codelineno-29-197" href="#__codelineno-29-197"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SelectOne&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-198" name="__codelineno-29-198" href="#__codelineno-29-198"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-199" name="__codelineno-29-199" href="#__codelineno-29-199"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-29-200" name="__codelineno-29-200" href="#__codelineno-29-200"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-201" name="__codelineno-29-201" href="#__codelineno-29-201"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-29-202" name="__codelineno-29-202" href="#__codelineno-29-202"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF9gH8iJ5K9&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-203" name="__codelineno-29-203" href="#__codelineno-29-203"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severity&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-204" name="__codelineno-29-204" href="#__codelineno-29-204"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResult == &#39;PF&#39; || testResult == &#39;PV&#39; || testResult == &#39;MIX&#39;&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-205" name="__codelineno-29-205" href="#__codelineno-29-205"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Show&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-206" name="__codelineno-29-206" href="#__codelineno-29-206"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-207" name="__codelineno-29-207" href="#__codelineno-29-207"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-29-208" name="__codelineno-29-208" href="#__codelineno-29-208"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-29-209" name="__codelineno-29-209" href="#__codelineno-29-209"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-29-210" name="__codelineno-29-210" href="#__codelineno-29-210"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severities&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-211" name="__codelineno-29-211" href="#__codelineno-29-211"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-212" name="__codelineno-29-212" href="#__codelineno-29-212"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Severity&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-213" name="__codelineno-29-213" href="#__codelineno-29-213"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;تصنيف الحالة&quot;</span>
+<a id="__codelineno-29-214" name="__codelineno-29-214" href="#__codelineno-29-214"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-215" name="__codelineno-29-215" href="#__codelineno-29-215"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-216" name="__codelineno-29-216" href="#__codelineno-29-216"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-217" name="__codelineno-29-217" href="#__codelineno-29-217"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gH9iJ0kL1M2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-218" name="__codelineno-29-218" href="#__codelineno-29-218"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-219" name="__codelineno-29-219" href="#__codelineno-29-219"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-220" name="__codelineno-29-220" href="#__codelineno-29-220"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-221" name="__codelineno-29-221" href="#__codelineno-29-221"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SelectOne&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-222" name="__codelineno-29-222" href="#__codelineno-29-222"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-29-223" name="__codelineno-29-223" href="#__codelineno-29-223"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-29-224" name="__codelineno-29-224" href="#__codelineno-29-224"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-225" name="__codelineno-29-225" href="#__codelineno-29-225"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-29-226" name="__codelineno-29-226" href="#__codelineno-29-226"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gH99J1kL1M2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-227" name="__codelineno-29-227" href="#__codelineno-29-227"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-228" name="__codelineno-29-228" href="#__codelineno-29-228"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pregnant &amp;&amp; (testResult == &#39;PF&#39; || testResult == &#39;PV&#39; || testResult == &#39;MIX&#39;)&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-229" name="__codelineno-29-229" href="#__codelineno-29-229"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Filter&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-230" name="__codelineno-29-230" href="#__codelineno-29-230"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-231" name="__codelineno-29-231" href="#__codelineno-29-231"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-232" name="__codelineno-29-232" href="#__codelineno-29-232"></a><span class="w">                </span><span class="nt">&quot;fieldToFilter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-233" name="__codelineno-29-233" href="#__codelineno-29-233"></a><span class="w">                </span><span class="nt">&quot;optionsToHide&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-234" name="__codelineno-29-234" href="#__codelineno-29-234"></a><span class="w">                  </span><span class="s2">&quot;TREATED&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-235" name="__codelineno-29-235" href="#__codelineno-29-235"></a><span class="w">                  </span><span class="s2">&quot;FIRST_DOSE&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-236" name="__codelineno-29-236" href="#__codelineno-29-236"></a><span class="w">                  </span><span class="s2">&quot;FIRST_DOSE_REFERRAL&quot;</span>
+<a id="__codelineno-29-237" name="__codelineno-29-237" href="#__codelineno-29-237"></a><span class="w">                </span><span class="p">],</span>
+<a id="__codelineno-29-238" name="__codelineno-29-238" href="#__codelineno-29-238"></a><span class="w">                </span><span class="nt">&quot;optionsToShow&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-29-239" name="__codelineno-29-239" href="#__codelineno-29-239"></a><span class="w">              </span><span class="p">}</span>
+<a id="__codelineno-29-240" name="__codelineno-29-240" href="#__codelineno-29-240"></a><span class="w">            </span><span class="p">},</span>
+<a id="__codelineno-29-241" name="__codelineno-29-241" href="#__codelineno-29-241"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-29-242" name="__codelineno-29-242" href="#__codelineno-29-242"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gH1011kL1M2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-243" name="__codelineno-29-243" href="#__codelineno-29-243"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-244" name="__codelineno-29-244" href="#__codelineno-29-244"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severity == &#39;SEVERE&#39;&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-245" name="__codelineno-29-245" href="#__codelineno-29-245"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Filter&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-246" name="__codelineno-29-246" href="#__codelineno-29-246"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-247" name="__codelineno-29-247" href="#__codelineno-29-247"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-248" name="__codelineno-29-248" href="#__codelineno-29-248"></a><span class="w">                </span><span class="nt">&quot;fieldToFilter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-249" name="__codelineno-29-249" href="#__codelineno-29-249"></a><span class="w">                </span><span class="nt">&quot;optionsToHide&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-250" name="__codelineno-29-250" href="#__codelineno-29-250"></a><span class="w">                </span><span class="nt">&quot;optionsToShow&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-251" name="__codelineno-29-251" href="#__codelineno-29-251"></a><span class="w">                  </span><span class="s2">&quot;FIRST_DOSE_REFERRAL&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-252" name="__codelineno-29-252" href="#__codelineno-29-252"></a><span class="w">                  </span><span class="s2">&quot;REFERRAL&quot;</span>
+<a id="__codelineno-29-253" name="__codelineno-29-253" href="#__codelineno-29-253"></a><span class="w">                </span><span class="p">]</span>
+<a id="__codelineno-29-254" name="__codelineno-29-254" href="#__codelineno-29-254"></a><span class="w">              </span><span class="p">}</span>
+<a id="__codelineno-29-255" name="__codelineno-29-255" href="#__codelineno-29-255"></a><span class="w">            </span><span class="p">},</span>
+<a id="__codelineno-29-256" name="__codelineno-29-256" href="#__codelineno-29-256"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-29-257" name="__codelineno-29-257" href="#__codelineno-29-257"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gH10J1kL1M2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-258" name="__codelineno-29-258" href="#__codelineno-29-258"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-259" name="__codelineno-29-259" href="#__codelineno-29-259"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResult == &#39;PF&#39; || testResult == &#39;PV&#39; || testResult == &#39;MIX&#39;&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-260" name="__codelineno-29-260" href="#__codelineno-29-260"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Show&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-261" name="__codelineno-29-261" href="#__codelineno-29-261"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-262" name="__codelineno-29-262" href="#__codelineno-29-262"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-29-263" name="__codelineno-29-263" href="#__codelineno-29-263"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-29-264" name="__codelineno-29-264" href="#__codelineno-29-264"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-29-265" name="__codelineno-29-265" href="#__codelineno-29-265"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatments&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-266" name="__codelineno-29-266" href="#__codelineno-29-266"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-267" name="__codelineno-29-267" href="#__codelineno-29-267"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-268" name="__codelineno-29-268" href="#__codelineno-29-268"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;تدبير الحالة&quot;</span>
+<a id="__codelineno-29-269" name="__codelineno-29-269" href="#__codelineno-29-269"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-270" name="__codelineno-29-270" href="#__codelineno-29-270"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-271" name="__codelineno-29-271" href="#__codelineno-29-271"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-272" name="__codelineno-29-272" href="#__codelineno-29-272"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nO3pQ4rS5T6&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-273" name="__codelineno-29-273" href="#__codelineno-29-273"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-274" name="__codelineno-29-274" href="#__codelineno-29-274"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;comment&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-275" name="__codelineno-29-275" href="#__codelineno-29-275"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-276" name="__codelineno-29-276" href="#__codelineno-29-276"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LongText&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-277" name="__codelineno-29-277" href="#__codelineno-29-277"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-278" name="__codelineno-29-278" href="#__codelineno-29-278"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-29-279" name="__codelineno-29-279" href="#__codelineno-29-279"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-280" name="__codelineno-29-280" href="#__codelineno-29-280"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-29-281" name="__codelineno-29-281" href="#__codelineno-29-281"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-282" name="__codelineno-29-282" href="#__codelineno-29-282"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-283" name="__codelineno-29-283" href="#__codelineno-29-283"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Comments&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-284" name="__codelineno-29-284" href="#__codelineno-29-284"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ملاحظات وتعليقات&quot;</span>
+<a id="__codelineno-29-285" name="__codelineno-29-285" href="#__codelineno-29-285"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-286" name="__codelineno-29-286" href="#__codelineno-29-286"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-29-287" name="__codelineno-29-287" href="#__codelineno-29-287"></a><span class="w">      </span><span class="p">],</span>
+<a id="__codelineno-29-288" name="__codelineno-29-288" href="#__codelineno-29-288"></a><span class="w">      </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-289" name="__codelineno-29-289" href="#__codelineno-29-289"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-290" name="__codelineno-29-290" href="#__codelineno-29-290"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xY1200bC1D2&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-291" name="__codelineno-29-291" href="#__codelineno-29-291"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-292" name="__codelineno-29-292" href="#__codelineno-29-292"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;genders&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-293" name="__codelineno-29-293" href="#__codelineno-29-293"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FEMALE&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-294" name="__codelineno-29-294" href="#__codelineno-29-294"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-295" name="__codelineno-29-295" href="#__codelineno-29-295"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-296" name="__codelineno-29-296" href="#__codelineno-29-296"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-297" name="__codelineno-29-297" href="#__codelineno-29-297"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Female&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-298" name="__codelineno-29-298" href="#__codelineno-29-298"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;أنثى&quot;</span>
+<a id="__codelineno-29-299" name="__codelineno-29-299" href="#__codelineno-29-299"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-300" name="__codelineno-29-300" href="#__codelineno-29-300"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-301" name="__codelineno-29-301" href="#__codelineno-29-301"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-302" name="__codelineno-29-302" href="#__codelineno-29-302"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5Y1200dC5D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-303" name="__codelineno-29-303" href="#__codelineno-29-303"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-304" name="__codelineno-29-304" href="#__codelineno-29-304"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;genders&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-305" name="__codelineno-29-305" href="#__codelineno-29-305"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MALE&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-306" name="__codelineno-29-306" href="#__codelineno-29-306"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-307" name="__codelineno-29-307" href="#__codelineno-29-307"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-308" name="__codelineno-29-308" href="#__codelineno-29-308"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-309" name="__codelineno-29-309" href="#__codelineno-29-309"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Male&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-310" name="__codelineno-29-310" href="#__codelineno-29-310"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ذكر&quot;</span>
+<a id="__codelineno-29-311" name="__codelineno-29-311" href="#__codelineno-29-311"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-312" name="__codelineno-29-312" href="#__codelineno-29-312"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-313" name="__codelineno-29-313" href="#__codelineno-29-313"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-314" name="__codelineno-29-314" href="#__codelineno-29-314"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;688888BC7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-315" name="__codelineno-29-315" href="#__codelineno-29-315"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-316" name="__codelineno-29-316" href="#__codelineno-29-316"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-317" name="__codelineno-29-317" href="#__codelineno-29-317"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;INVALID&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-318" name="__codelineno-29-318" href="#__codelineno-29-318"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-319" name="__codelineno-29-319" href="#__codelineno-29-319"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-320" name="__codelineno-29-320" href="#__codelineno-29-320"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-321" name="__codelineno-29-321" href="#__codelineno-29-321"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Invalid&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-322" name="__codelineno-29-322" href="#__codelineno-29-322"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;غير صالح&quot;</span>
+<a id="__codelineno-29-323" name="__codelineno-29-323" href="#__codelineno-29-323"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-324" name="__codelineno-29-324" href="#__codelineno-29-324"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-325" name="__codelineno-29-325" href="#__codelineno-29-325"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-326" name="__codelineno-29-326" href="#__codelineno-29-326"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;6Y1288dC5D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-327" name="__codelineno-29-327" href="#__codelineno-29-327"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-328" name="__codelineno-29-328" href="#__codelineno-29-328"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-329" name="__codelineno-29-329" href="#__codelineno-29-329"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NEGATIVE&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-330" name="__codelineno-29-330" href="#__codelineno-29-330"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-331" name="__codelineno-29-331" href="#__codelineno-29-331"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-332" name="__codelineno-29-332" href="#__codelineno-29-332"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-333" name="__codelineno-29-333" href="#__codelineno-29-333"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Negative&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-334" name="__codelineno-29-334" href="#__codelineno-29-334"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;سلبي&quot;</span>
+<a id="__codelineno-29-335" name="__codelineno-29-335" href="#__codelineno-29-335"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-336" name="__codelineno-29-336" href="#__codelineno-29-336"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-337" name="__codelineno-29-337" href="#__codelineno-29-337"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-338" name="__codelineno-29-338" href="#__codelineno-29-338"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;6Y3338dC5D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-339" name="__codelineno-29-339" href="#__codelineno-29-339"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-340" name="__codelineno-29-340" href="#__codelineno-29-340"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-341" name="__codelineno-29-341" href="#__codelineno-29-341"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PF&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-342" name="__codelineno-29-342" href="#__codelineno-29-342"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-343" name="__codelineno-29-343" href="#__codelineno-29-343"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-344" name="__codelineno-29-344" href="#__codelineno-29-344"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-345" name="__codelineno-29-345" href="#__codelineno-29-345"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Plasmodium falciparum&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-346" name="__codelineno-29-346" href="#__codelineno-29-346"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;بلاسموديوم فالسيباروم&quot;</span>
+<a id="__codelineno-29-347" name="__codelineno-29-347" href="#__codelineno-29-347"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-348" name="__codelineno-29-348" href="#__codelineno-29-348"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-349" name="__codelineno-29-349" href="#__codelineno-29-349"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-350" name="__codelineno-29-350" href="#__codelineno-29-350"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10CDF77C7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-351" name="__codelineno-29-351" href="#__codelineno-29-351"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-352" name="__codelineno-29-352" href="#__codelineno-29-352"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;detectionTypes&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-353" name="__codelineno-29-353" href="#__codelineno-29-353"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ACTIVE&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-354" name="__codelineno-29-354" href="#__codelineno-29-354"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-355" name="__codelineno-29-355" href="#__codelineno-29-355"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-356" name="__codelineno-29-356" href="#__codelineno-29-356"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-357" name="__codelineno-29-357" href="#__codelineno-29-357"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Active&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-358" name="__codelineno-29-358" href="#__codelineno-29-358"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;بحث نشط&quot;</span>
+<a id="__codelineno-29-359" name="__codelineno-29-359" href="#__codelineno-29-359"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-360" name="__codelineno-29-360" href="#__codelineno-29-360"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-361" name="__codelineno-29-361" href="#__codelineno-29-361"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-362" name="__codelineno-29-362" href="#__codelineno-29-362"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;555288dC5D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-363" name="__codelineno-29-363" href="#__codelineno-29-363"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-364" name="__codelineno-29-364" href="#__codelineno-29-364"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-365" name="__codelineno-29-365" href="#__codelineno-29-365"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PV&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-366" name="__codelineno-29-366" href="#__codelineno-29-366"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-367" name="__codelineno-29-367" href="#__codelineno-29-367"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-368" name="__codelineno-29-368" href="#__codelineno-29-368"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-369" name="__codelineno-29-369" href="#__codelineno-29-369"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Plasmodium vivax&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-370" name="__codelineno-29-370" href="#__codelineno-29-370"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;بلاسموديوم فيفاكس&quot;</span>
+<a id="__codelineno-29-371" name="__codelineno-29-371" href="#__codelineno-29-371"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-372" name="__codelineno-29-372" href="#__codelineno-29-372"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-373" name="__codelineno-29-373" href="#__codelineno-29-373"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-374" name="__codelineno-29-374" href="#__codelineno-29-374"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1CD8FEBC7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-375" name="__codelineno-29-375" href="#__codelineno-29-375"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-376" name="__codelineno-29-376" href="#__codelineno-29-376"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatments&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-377" name="__codelineno-29-377" href="#__codelineno-29-377"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TREATED&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-378" name="__codelineno-29-378" href="#__codelineno-29-378"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-379" name="__codelineno-29-379" href="#__codelineno-29-379"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-380" name="__codelineno-29-380" href="#__codelineno-29-380"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-381" name="__codelineno-29-381" href="#__codelineno-29-381"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Treated&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-382" name="__codelineno-29-382" href="#__codelineno-29-382"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;معالج&quot;</span>
+<a id="__codelineno-29-383" name="__codelineno-29-383" href="#__codelineno-29-383"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-384" name="__codelineno-29-384" href="#__codelineno-29-384"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-385" name="__codelineno-29-385" href="#__codelineno-29-385"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-386" name="__codelineno-29-386" href="#__codelineno-29-386"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10CDF8BC7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-387" name="__codelineno-29-387" href="#__codelineno-29-387"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-388" name="__codelineno-29-388" href="#__codelineno-29-388"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severities&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-389" name="__codelineno-29-389" href="#__codelineno-29-389"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SEVERE&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-390" name="__codelineno-29-390" href="#__codelineno-29-390"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-391" name="__codelineno-29-391" href="#__codelineno-29-391"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-392" name="__codelineno-29-392" href="#__codelineno-29-392"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-393" name="__codelineno-29-393" href="#__codelineno-29-393"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Severe&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-394" name="__codelineno-29-394" href="#__codelineno-29-394"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;وخيمة&quot;</span>
+<a id="__codelineno-29-395" name="__codelineno-29-395" href="#__codelineno-29-395"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-396" name="__codelineno-29-396" href="#__codelineno-29-396"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-397" name="__codelineno-29-397" href="#__codelineno-29-397"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-398" name="__codelineno-29-398" href="#__codelineno-29-398"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9CC8F8BC7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-399" name="__codelineno-29-399" href="#__codelineno-29-399"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-400" name="__codelineno-29-400" href="#__codelineno-29-400"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severities&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-401" name="__codelineno-29-401" href="#__codelineno-29-401"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SIMPLE&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-402" name="__codelineno-29-402" href="#__codelineno-29-402"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-403" name="__codelineno-29-403" href="#__codelineno-29-403"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-404" name="__codelineno-29-404" href="#__codelineno-29-404"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-405" name="__codelineno-29-405" href="#__codelineno-29-405"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Simple&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-406" name="__codelineno-29-406" href="#__codelineno-29-406"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;بسيطة&quot;</span>
+<a id="__codelineno-29-407" name="__codelineno-29-407" href="#__codelineno-29-407"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-408" name="__codelineno-29-408" href="#__codelineno-29-408"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-409" name="__codelineno-29-409" href="#__codelineno-29-409"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-410" name="__codelineno-29-410" href="#__codelineno-29-410"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;666288dC5D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-411" name="__codelineno-29-411" href="#__codelineno-29-411"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-412" name="__codelineno-29-412" href="#__codelineno-29-412"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-413" name="__codelineno-29-413" href="#__codelineno-29-413"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MIX&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-414" name="__codelineno-29-414" href="#__codelineno-29-414"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-415" name="__codelineno-29-415" href="#__codelineno-29-415"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-416" name="__codelineno-29-416" href="#__codelineno-29-416"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-417" name="__codelineno-29-417" href="#__codelineno-29-417"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mixed&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-418" name="__codelineno-29-418" href="#__codelineno-29-418"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;مختلط&quot;</span>
+<a id="__codelineno-29-419" name="__codelineno-29-419" href="#__codelineno-29-419"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-420" name="__codelineno-29-420" href="#__codelineno-29-420"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-421" name="__codelineno-29-421" href="#__codelineno-29-421"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-422" name="__codelineno-29-422" href="#__codelineno-29-422"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9CC8F66C7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-423" name="__codelineno-29-423" href="#__codelineno-29-423"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-424" name="__codelineno-29-424" href="#__codelineno-29-424"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;detectionTypes&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-425" name="__codelineno-29-425" href="#__codelineno-29-425"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;REACTIVE&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-426" name="__codelineno-29-426" href="#__codelineno-29-426"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-427" name="__codelineno-29-427" href="#__codelineno-29-427"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-428" name="__codelineno-29-428" href="#__codelineno-29-428"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-429" name="__codelineno-29-429" href="#__codelineno-29-429"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reactive&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-430" name="__codelineno-29-430" href="#__codelineno-29-430"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;زيارة روتينية&quot;</span>
+<a id="__codelineno-29-431" name="__codelineno-29-431" href="#__codelineno-29-431"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-432" name="__codelineno-29-432" href="#__codelineno-29-432"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-433" name="__codelineno-29-433" href="#__codelineno-29-433"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-434" name="__codelineno-29-434" href="#__codelineno-29-434"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ECDYFEBC8D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-435" name="__codelineno-29-435" href="#__codelineno-29-435"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-436" name="__codelineno-29-436" href="#__codelineno-29-436"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatments&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-437" name="__codelineno-29-437" href="#__codelineno-29-437"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FIRST_DOSE&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-438" name="__codelineno-29-438" href="#__codelineno-29-438"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-439" name="__codelineno-29-439" href="#__codelineno-29-439"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-440" name="__codelineno-29-440" href="#__codelineno-29-440"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-441" name="__codelineno-29-441" href="#__codelineno-29-441"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;First Dose&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-442" name="__codelineno-29-442" href="#__codelineno-29-442"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;الجرعة الأولى&quot;</span>
+<a id="__codelineno-29-443" name="__codelineno-29-443" href="#__codelineno-29-443"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-444" name="__codelineno-29-444" href="#__codelineno-29-444"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-445" name="__codelineno-29-445" href="#__codelineno-29-445"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-446" name="__codelineno-29-446" href="#__codelineno-29-446"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ECDYF9628D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-447" name="__codelineno-29-447" href="#__codelineno-29-447"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-448" name="__codelineno-29-448" href="#__codelineno-29-448"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatments&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-449" name="__codelineno-29-449" href="#__codelineno-29-449"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FIRST_DOSE_REFERRAL&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-450" name="__codelineno-29-450" href="#__codelineno-29-450"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-451" name="__codelineno-29-451" href="#__codelineno-29-451"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-452" name="__codelineno-29-452" href="#__codelineno-29-452"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-453" name="__codelineno-29-453" href="#__codelineno-29-453"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;First Dose &amp; Referral&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-454" name="__codelineno-29-454" href="#__codelineno-29-454"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;الجرعة الأولى وإحالة&quot;</span>
+<a id="__codelineno-29-455" name="__codelineno-29-455" href="#__codelineno-29-455"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-456" name="__codelineno-29-456" href="#__codelineno-29-456"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-29-457" name="__codelineno-29-457" href="#__codelineno-29-457"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-29-458" name="__codelineno-29-458" href="#__codelineno-29-458"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9RD8FEFC7D0&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-459" name="__codelineno-29-459" href="#__codelineno-29-459"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-460" name="__codelineno-29-460" href="#__codelineno-29-460"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatments&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-461" name="__codelineno-29-461" href="#__codelineno-29-461"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;REFERRAL&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-462" name="__codelineno-29-462" href="#__codelineno-29-462"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-29-463" name="__codelineno-29-463" href="#__codelineno-29-463"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-29-464" name="__codelineno-29-464" href="#__codelineno-29-464"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-29-465" name="__codelineno-29-465" href="#__codelineno-29-465"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Referral&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-466" name="__codelineno-29-466" href="#__codelineno-29-466"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;إحالة&quot;</span>
+<a id="__codelineno-29-467" name="__codelineno-29-467" href="#__codelineno-29-467"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-29-468" name="__codelineno-29-468" href="#__codelineno-29-468"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-29-469" name="__codelineno-29-469" href="#__codelineno-29-469"></a><span class="w">      </span><span class="p">],</span>
+<a id="__codelineno-29-470" name="__codelineno-29-470" href="#__codelineno-29-470"></a><span class="w">      </span><span class="nt">&quot;orgUnits&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-29-471" name="__codelineno-29-471" href="#__codelineno-29-471"></a><span class="w">        </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-29-472" name="__codelineno-29-472" href="#__codelineno-29-472"></a><span class="w">        </span><span class="s2">&quot;...&quot;</span>
+<a id="__codelineno-29-473" name="__codelineno-29-473" href="#__codelineno-29-473"></a><span class="w">      </span><span class="p">]</span>
+<a id="__codelineno-29-474" name="__codelineno-29-474" href="#__codelineno-29-474"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-29-475" name="__codelineno-29-475" href="#__codelineno-29-475"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-29-476" name="__codelineno-29-476" href="#__codelineno-29-476"></a><span class="p">}</span>
+</code></pre></div>
+<h3 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h3>
+<p>We welcome contributions to enhance Data-Run-Mobile. Please follow these steps:</p>
+<ol>
+<li>Fork the repository.</li>
+<li>Create a new branch (<code>git checkout -b feature-branch</code>).</li>
+<li>Commit your changes (<code>git commit -m 'Add new feature'</code>).</li>
+<li>Push to the branch (<code>git push origin feature-branch</code>).</li>
+<li>Create a pull request.</li>
+</ol>
+<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
+<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+        
+          
+          <a href="architecture/" class="md-footer__link md-footer__link--next" aria-label="Next: 3. Architecture">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                3. Architecture
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/orgs/MassPro-NMCPYE/discussions" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["announce.dismiss", "content.action.edit", "content.code.annotate", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="javascripts/tablesort.js"></script>
+      
+        <script src="javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

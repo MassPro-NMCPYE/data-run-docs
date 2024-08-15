@@ -1,0 +1,1334 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Hamza">
+      
+      
+      
+        <link rel="prev" href="../interoperability-and-standards/">
+      
+      
+        <link rel="next" href="../security/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
+    
+    
+      
+        <title>Data-Run-Mobile - NMCP Yemen Info System Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#data-run-mobile" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="NMCP Yemen Info System Docs" class="md-header__button md-logo" aria-label="NMCP Yemen Info System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NMCP Yemen Info System Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Data-Run-Mobile
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/MassPro-NMCPYE/mass-pro-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MassPro-NMCPYE Docs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="NMCP Yemen Info System Docs" class="md-nav__button md-logo" aria-label="NMCP Yemen Info System Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    NMCP Yemen Info System Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/MassPro-NMCPYE/mass-pro-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    MassPro-NMCPYE Docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DataRun System, NMCP Yemen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3. Architecture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    4. Data Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../database-schema/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    5. Database Schema
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../diagrams-and-visuals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    14. Diagrams and Visuals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../future-enhancements/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    12. Future Enhancements
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../implementation-details/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Implementation details
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../interoperability-and-standards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    7. Interoperability and Standards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Data-Run-Mobile
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Data-Run-Mobile
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      Screenshots
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    8. Security
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../system-overview/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    System overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-interface/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    9. User Interface
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    6. User Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../workflow-management/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    10. Workflow Management
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/MassPro-NMCPYE/mass-pro-docs/edit/main/docs/mobile-app.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+
+
+<h1 id="data-run-mobile">Data-Run-Mobile<a class="headerlink" href="#data-run-mobile" title="Permanent link">&para;</a></h1>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>Data-Run-Mobile is a Flutter application developed for the National Malaria Control Program (NMCP)
+in Yemen. The app facilitates the submission and synchronization of malaria-related data with the
+main backend system, Data-run-Api. This tool is designed to streamline data collection processes and
+ensure accurate and timely data transmission to support malaria control efforts.</p>
+<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Dynamic Form Download</strong>: The app downloads forms designed on the backend, which can include
+  various question types.</li>
+<li><strong>Question Types</strong>: Supports Text, Number, Date, Multi Answer, Single Answer, Image, and File
+  questions.</li>
+<li><strong>Data Submission</strong>: Users can submit various malaria-related data directly from the app.</li>
+<li><strong>Data Synchronization</strong>: The app syncs submitted data with the Data-run-Api, ensuring all
+  information is up-to-date.</li>
+<li><strong>User Authentication</strong>: Secure login and authentication to ensure data integrity and privacy.</li>
+<li><strong>User Management</strong>: Quickly create users and assign them to particular teams.</li>
+<li><strong>Offline Mode</strong>: Allows data entry even when offline; data will be synced once the internet
+  connection is restored.</li>
+<li><strong>User-Friendly Interface</strong>: Simple and intuitive design to facilitate ease of use by healthcare
+  workers.
+-</li>
+</ul>
+<h2 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h2>
+<h1 id="project-name">Project Name<a class="headerlink" href="#project-name" title="Permanent link">&para;</a></h1>
+<h2 id="screenshots_1">Screenshots<a class="headerlink" href="#screenshots_1" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th><img alt="1" src="../screenshots/1.png" /></th>
+<th><img alt="2" src="../screenshots/2.png" /></th>
+<th><img alt="3" src="../screenshots/3.png" /></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="4" src="../screenshots/4.png" /></td>
+<td><img alt="5" src="../screenshots/5.png" /></td>
+<td><img alt="6" src="../screenshots/6.png" /></td>
+</tr>
+<tr>
+<td><img alt="7" src="../screenshots/7.png" /></td>
+<td><img alt="8" src="../screenshots/8.png" /></td>
+<td><img alt="9" src="../screenshots/9.jpg" /></td>
+</tr>
+<tr>
+<td><img alt="10" src="../screenshots/10.png" /></td>
+<td><img alt="11" src="../screenshots/11.png" /></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<p>To install Data-Run-Mobile on your device, follow these steps:</p>
+<ol>
+<li><strong>Clone the Repository</strong>:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/Hamza-ye/datarun-mobile.git
+</code></pre></div></li>
+<li><strong>Navigate to the Project Directory</strong>:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd</span><span class="w"> </span>data-run-mobile
+</code></pre></div></li>
+<li><strong>Install Dependencies</strong>:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>flutter<span class="w"> </span>pub<span class="w"> </span>get
+</code></pre></div></li>
+<li><strong>Run the App</strong>:
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>flutter<span class="w"> </span>run
+</code></pre></div></li>
+</ol>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>Login</strong>: Enter your credentials to access the app.</li>
+<li><strong>Download Forms</strong>: Navigate to the forms section to download the latest forms from the backend.</li>
+<li><strong>Data Entry</strong>: Fill out the forms with the required data. The forms can include various types of
+   questions:<ul>
+<li><strong>Text</strong>: Enter textual information.</li>
+<li><strong>Number</strong>: Enter numerical data.</li>
+<li><strong>Date</strong>: Select dates from a date picker.</li>
+<li><strong>Multi Answer</strong>: Select multiple options from a list.</li>
+<li><strong>Single Answer</strong>: Select one option from a list.</li>
+<li><strong>Image</strong>: Capture or upload images.</li>
+<li><strong>File</strong>: Upload files.</li>
+</ul>
+</li>
+<li><strong>User Management</strong>: Create users and assign them to specific teams.</li>
+<li><strong>Sync Data</strong>: Ensure your device is connected to the internet and use the sync feature to upload
+   data to the Data-run-Api.</li>
+<li><strong>View and Edit Submissions</strong>: Check previous submissions and their sync status.</li>
+</ol>
+<h2 id="sample-form">Sample Form:<a class="headerlink" href="#sample-form" title="Permanent link">&para;</a></h2>
+<p>A sample of the form returned from the API end point:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">&quot;paging&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">&quot;page&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nt">&quot;pageCount&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nt">&quot;total&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="nt">&quot;pageSize&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="nt">&quot;dataForms&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="p">{</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">      </span><span class="nt">&quot;createdBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">      </span><span class="nt">&quot;createdDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-08-05T02:37:40.535Z&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">      </span><span class="nt">&quot;lastModifiedBy&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;admin&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w">      </span><span class="nt">&quot;lastModifiedDate&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2024-08-05T02:37:40.535Z&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="w">      </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;66b03af41327d612461a6aac&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w">      </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;KcsA3KETRbY&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="w">      </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CHV_PATIENTS_FORM&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">      </span><span class="nt">&quot;displayName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CHV cases registering form&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">      </span><span class="nt">&quot;disabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">      </span><span class="nt">&quot;activity&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;oBne891mA9n&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">      </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">9</span><span class="p">,</span>
+<a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">      </span><span class="nt">&quot;defaultLocal&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;en&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">        </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;CHV cases registering form&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">        </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;تسجيل حالات chv&quot;</span>
+<a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">      </span><span class="p">},</span>
+<a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">      </span><span class="nt">&quot;fields&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;qR5sT6uV7W8&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-28" name="__codelineno-4-28" href="#__codelineno-4-28"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-29" name="__codelineno-4-29" href="#__codelineno-4-29"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;locationName&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-30" name="__codelineno-4-30" href="#__codelineno-4-30"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-31" name="__codelineno-4-31" href="#__codelineno-4-31"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Text&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-32" name="__codelineno-4-32" href="#__codelineno-4-32"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-33" name="__codelineno-4-33" href="#__codelineno-4-33"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-34" name="__codelineno-4-34" href="#__codelineno-4-34"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-35" name="__codelineno-4-35" href="#__codelineno-4-35"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-4-36" name="__codelineno-4-36" href="#__codelineno-4-36"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-37" name="__codelineno-4-37" href="#__codelineno-4-37"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-38" name="__codelineno-4-38" href="#__codelineno-4-38"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Village Name&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-39" name="__codelineno-4-39" href="#__codelineno-4-39"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;اسم القرية&quot;</span>
+<a id="__codelineno-4-40" name="__codelineno-4-40" href="#__codelineno-4-40"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-41" name="__codelineno-4-41" href="#__codelineno-4-41"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-42" name="__codelineno-4-42" href="#__codelineno-4-42"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;cD7eF8gH9I0&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-45" name="__codelineno-4-45" href="#__codelineno-4-45"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;name&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-46" name="__codelineno-4-46" href="#__codelineno-4-46"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Name of the patient&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-47" name="__codelineno-4-47" href="#__codelineno-4-47"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Text&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-48" name="__codelineno-4-48" href="#__codelineno-4-48"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-49" name="__codelineno-4-49" href="#__codelineno-4-49"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-50" name="__codelineno-4-50" href="#__codelineno-4-50"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-51" name="__codelineno-4-51" href="#__codelineno-4-51"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-4-52" name="__codelineno-4-52" href="#__codelineno-4-52"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF6676iJ5K6&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-53" name="__codelineno-4-53" href="#__codelineno-4-53"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;name&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-54" name="__codelineno-4-54" href="#__codelineno-4-54"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;name.length &gt;= 9&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-55" name="__codelineno-4-55" href="#__codelineno-4-55"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Error&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-56" name="__codelineno-4-56" href="#__codelineno-4-56"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-57" name="__codelineno-4-57" href="#__codelineno-4-57"></a><span class="w">                </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Name is not complete&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-58" name="__codelineno-4-58" href="#__codelineno-4-58"></a><span class="w">                </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ادخل الاسم الرباعي&quot;</span>
+<a id="__codelineno-4-59" name="__codelineno-4-59" href="#__codelineno-4-59"></a><span class="w">              </span><span class="p">},</span>
+<a id="__codelineno-4-60" name="__codelineno-4-60" href="#__codelineno-4-60"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-4-61" name="__codelineno-4-61" href="#__codelineno-4-61"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-4-62" name="__codelineno-4-62" href="#__codelineno-4-62"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-4-63" name="__codelineno-4-63" href="#__codelineno-4-63"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-64" name="__codelineno-4-64" href="#__codelineno-4-64"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-65" name="__codelineno-4-65" href="#__codelineno-4-65"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Patient name&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-66" name="__codelineno-4-66" href="#__codelineno-4-66"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;اسم المريض&quot;</span>
+<a id="__codelineno-4-67" name="__codelineno-4-67" href="#__codelineno-4-67"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-68" name="__codelineno-4-68" href="#__codelineno-4-68"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-69" name="__codelineno-4-69" href="#__codelineno-4-69"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-70" name="__codelineno-4-70" href="#__codelineno-4-70"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;vW3xY4zA5B6&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-71" name="__codelineno-4-71" href="#__codelineno-4-71"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-72" name="__codelineno-4-72" href="#__codelineno-4-72"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;visitDate&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-73" name="__codelineno-4-73" href="#__codelineno-4-73"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-74" name="__codelineno-4-74" href="#__codelineno-4-74"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Date&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-75" name="__codelineno-4-75" href="#__codelineno-4-75"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-76" name="__codelineno-4-76" href="#__codelineno-4-76"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-4-77" name="__codelineno-4-77" href="#__codelineno-4-77"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-78" name="__codelineno-4-78" href="#__codelineno-4-78"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-4-79" name="__codelineno-4-79" href="#__codelineno-4-79"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-80" name="__codelineno-4-80" href="#__codelineno-4-80"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-81" name="__codelineno-4-81" href="#__codelineno-4-81"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Visit Date&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-82" name="__codelineno-4-82" href="#__codelineno-4-82"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;تاريخ الزيارة&quot;</span>
+<a id="__codelineno-4-83" name="__codelineno-4-83" href="#__codelineno-4-83"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-84" name="__codelineno-4-84" href="#__codelineno-4-84"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-85" name="__codelineno-4-85" href="#__codelineno-4-85"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-86" name="__codelineno-4-86" href="#__codelineno-4-86"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;jK1lM2nO3P4&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-87" name="__codelineno-4-87" href="#__codelineno-4-87"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-88" name="__codelineno-4-88" href="#__codelineno-4-88"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;age&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-89" name="__codelineno-4-89" href="#__codelineno-4-89"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Age in Years and (months for age less than 1 year)&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-90" name="__codelineno-4-90" href="#__codelineno-4-90"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Age&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-91" name="__codelineno-4-91" href="#__codelineno-4-91"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-92" name="__codelineno-4-92" href="#__codelineno-4-92"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-4-93" name="__codelineno-4-93" href="#__codelineno-4-93"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-94" name="__codelineno-4-94" href="#__codelineno-4-94"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-4-95" name="__codelineno-4-95" href="#__codelineno-4-95"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF66H6iJ5K6&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-96" name="__codelineno-4-96" href="#__codelineno-4-96"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;age&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-97" name="__codelineno-4-97" href="#__codelineno-4-97"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;age &lt;= 0 || age &gt; 100&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-98" name="__codelineno-4-98" href="#__codelineno-4-98"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Error&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-99" name="__codelineno-4-99" href="#__codelineno-4-99"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-100" name="__codelineno-4-100" href="#__codelineno-4-100"></a><span class="w">                </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Age is greater than normal&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-101" name="__codelineno-4-101" href="#__codelineno-4-101"></a><span class="w">                </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;العمر كبير جدا تأكد&quot;</span>
+<a id="__codelineno-4-102" name="__codelineno-4-102" href="#__codelineno-4-102"></a><span class="w">              </span><span class="p">},</span>
+<a id="__codelineno-4-103" name="__codelineno-4-103" href="#__codelineno-4-103"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-4-104" name="__codelineno-4-104" href="#__codelineno-4-104"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-4-105" name="__codelineno-4-105" href="#__codelineno-4-105"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-4-106" name="__codelineno-4-106" href="#__codelineno-4-106"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-107" name="__codelineno-4-107" href="#__codelineno-4-107"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-108" name="__codelineno-4-108" href="#__codelineno-4-108"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Age&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-109" name="__codelineno-4-109" href="#__codelineno-4-109"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;العمر&quot;</span>
+<a id="__codelineno-4-110" name="__codelineno-4-110" href="#__codelineno-4-110"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-111" name="__codelineno-4-111" href="#__codelineno-4-111"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-112" name="__codelineno-4-112" href="#__codelineno-4-112"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-113" name="__codelineno-4-113" href="#__codelineno-4-113"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xY9zA0bC1D2&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-114" name="__codelineno-4-114" href="#__codelineno-4-114"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-115" name="__codelineno-4-115" href="#__codelineno-4-115"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gender&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-116" name="__codelineno-4-116" href="#__codelineno-4-116"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-117" name="__codelineno-4-117" href="#__codelineno-4-117"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SelectOne&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-118" name="__codelineno-4-118" href="#__codelineno-4-118"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-119" name="__codelineno-4-119" href="#__codelineno-4-119"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-4-120" name="__codelineno-4-120" href="#__codelineno-4-120"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-121" name="__codelineno-4-121" href="#__codelineno-4-121"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-4-122" name="__codelineno-4-122" href="#__codelineno-4-122"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;genders&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-123" name="__codelineno-4-123" href="#__codelineno-4-123"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-124" name="__codelineno-4-124" href="#__codelineno-4-124"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Gender&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-125" name="__codelineno-4-125" href="#__codelineno-4-125"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;الجنس&quot;</span>
+<a id="__codelineno-4-126" name="__codelineno-4-126" href="#__codelineno-4-126"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-127" name="__codelineno-4-127" href="#__codelineno-4-127"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-128" name="__codelineno-4-128" href="#__codelineno-4-128"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-129" name="__codelineno-4-129" href="#__codelineno-4-129"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF3gH4iJ5K6&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-130" name="__codelineno-4-130" href="#__codelineno-4-130"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-131" name="__codelineno-4-131" href="#__codelineno-4-131"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pregnant&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-132" name="__codelineno-4-132" href="#__codelineno-4-132"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-133" name="__codelineno-4-133" href="#__codelineno-4-133"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Boolean&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-134" name="__codelineno-4-134" href="#__codelineno-4-134"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-135" name="__codelineno-4-135" href="#__codelineno-4-135"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-4-136" name="__codelineno-4-136" href="#__codelineno-4-136"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-137" name="__codelineno-4-137" href="#__codelineno-4-137"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-4-138" name="__codelineno-4-138" href="#__codelineno-4-138"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF5gH6iJ5K6&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-139" name="__codelineno-4-139" href="#__codelineno-4-139"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pregnant&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-140" name="__codelineno-4-140" href="#__codelineno-4-140"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gender == &#39;FEMALE&#39; &amp;&amp; age &gt;= 14&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-141" name="__codelineno-4-141" href="#__codelineno-4-141"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Show&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-142" name="__codelineno-4-142" href="#__codelineno-4-142"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-143" name="__codelineno-4-143" href="#__codelineno-4-143"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-4-144" name="__codelineno-4-144" href="#__codelineno-4-144"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-4-145" name="__codelineno-4-145" href="#__codelineno-4-145"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-4-146" name="__codelineno-4-146" href="#__codelineno-4-146"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-147" name="__codelineno-4-147" href="#__codelineno-4-147"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-148" name="__codelineno-4-148" href="#__codelineno-4-148"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Is pregnant?&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-149" name="__codelineno-4-149" href="#__codelineno-4-149"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;هل هي حامل؟&quot;</span>
+<a id="__codelineno-4-150" name="__codelineno-4-150" href="#__codelineno-4-150"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-151" name="__codelineno-4-151" href="#__codelineno-4-151"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-152" name="__codelineno-4-152" href="#__codelineno-4-152"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-153" name="__codelineno-4-153" href="#__codelineno-4-153"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;lM7nO8pQ9R0&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-154" name="__codelineno-4-154" href="#__codelineno-4-154"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-155" name="__codelineno-4-155" href="#__codelineno-4-155"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResult&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-156" name="__codelineno-4-156" href="#__codelineno-4-156"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-157" name="__codelineno-4-157" href="#__codelineno-4-157"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SelectOne&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-158" name="__codelineno-4-158" href="#__codelineno-4-158"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-159" name="__codelineno-4-159" href="#__codelineno-4-159"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-4-160" name="__codelineno-4-160" href="#__codelineno-4-160"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-161" name="__codelineno-4-161" href="#__codelineno-4-161"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-4-162" name="__codelineno-4-162" href="#__codelineno-4-162"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-163" name="__codelineno-4-163" href="#__codelineno-4-163"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-164" name="__codelineno-4-164" href="#__codelineno-4-164"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Test Result&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-165" name="__codelineno-4-165" href="#__codelineno-4-165"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;نتيجة الفحص&quot;</span>
+<a id="__codelineno-4-166" name="__codelineno-4-166" href="#__codelineno-4-166"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-167" name="__codelineno-4-167" href="#__codelineno-4-167"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-168" name="__codelineno-4-168" href="#__codelineno-4-168"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-169" name="__codelineno-4-169" href="#__codelineno-4-169"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;z33bC6dE7F8&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-170" name="__codelineno-4-170" href="#__codelineno-4-170"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-171" name="__codelineno-4-171" href="#__codelineno-4-171"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;detectionType&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-172" name="__codelineno-4-172" href="#__codelineno-4-172"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-173" name="__codelineno-4-173" href="#__codelineno-4-173"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SelectOne&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-174" name="__codelineno-4-174" href="#__codelineno-4-174"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-175" name="__codelineno-4-175" href="#__codelineno-4-175"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-4-176" name="__codelineno-4-176" href="#__codelineno-4-176"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-177" name="__codelineno-4-177" href="#__codelineno-4-177"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-4-178" name="__codelineno-4-178" href="#__codelineno-4-178"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF3gH8iJ5K9&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-179" name="__codelineno-4-179" href="#__codelineno-4-179"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;detectionType&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-180" name="__codelineno-4-180" href="#__codelineno-4-180"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResult == &#39;PF&#39; || testResult == &#39;PV&#39; || testResult == &#39;MIX&#39;&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-181" name="__codelineno-4-181" href="#__codelineno-4-181"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Show&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-182" name="__codelineno-4-182" href="#__codelineno-4-182"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-183" name="__codelineno-4-183" href="#__codelineno-4-183"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-4-184" name="__codelineno-4-184" href="#__codelineno-4-184"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-4-185" name="__codelineno-4-185" href="#__codelineno-4-185"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-4-186" name="__codelineno-4-186" href="#__codelineno-4-186"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;detectionTypes&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-187" name="__codelineno-4-187" href="#__codelineno-4-187"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-188" name="__codelineno-4-188" href="#__codelineno-4-188"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Detection Type&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-189" name="__codelineno-4-189" href="#__codelineno-4-189"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;نوع الاكتشاف&quot;</span>
+<a id="__codelineno-4-190" name="__codelineno-4-190" href="#__codelineno-4-190"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-191" name="__codelineno-4-191" href="#__codelineno-4-191"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-192" name="__codelineno-4-192" href="#__codelineno-4-192"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-193" name="__codelineno-4-193" href="#__codelineno-4-193"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;zA5bDDdE7F8&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-194" name="__codelineno-4-194" href="#__codelineno-4-194"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-195" name="__codelineno-4-195" href="#__codelineno-4-195"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severity&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-196" name="__codelineno-4-196" href="#__codelineno-4-196"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-197" name="__codelineno-4-197" href="#__codelineno-4-197"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SelectOne&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-198" name="__codelineno-4-198" href="#__codelineno-4-198"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-199" name="__codelineno-4-199" href="#__codelineno-4-199"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-4-200" name="__codelineno-4-200" href="#__codelineno-4-200"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-201" name="__codelineno-4-201" href="#__codelineno-4-201"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-4-202" name="__codelineno-4-202" href="#__codelineno-4-202"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;eF9gH8iJ5K9&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-203" name="__codelineno-4-203" href="#__codelineno-4-203"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severity&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-204" name="__codelineno-4-204" href="#__codelineno-4-204"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResult == &#39;PF&#39; || testResult == &#39;PV&#39; || testResult == &#39;MIX&#39;&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-205" name="__codelineno-4-205" href="#__codelineno-4-205"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Show&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-206" name="__codelineno-4-206" href="#__codelineno-4-206"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-207" name="__codelineno-4-207" href="#__codelineno-4-207"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-4-208" name="__codelineno-4-208" href="#__codelineno-4-208"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-4-209" name="__codelineno-4-209" href="#__codelineno-4-209"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-4-210" name="__codelineno-4-210" href="#__codelineno-4-210"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severities&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-211" name="__codelineno-4-211" href="#__codelineno-4-211"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-212" name="__codelineno-4-212" href="#__codelineno-4-212"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Severity&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-213" name="__codelineno-4-213" href="#__codelineno-4-213"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;تصنيف الحالة&quot;</span>
+<a id="__codelineno-4-214" name="__codelineno-4-214" href="#__codelineno-4-214"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-215" name="__codelineno-4-215" href="#__codelineno-4-215"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-216" name="__codelineno-4-216" href="#__codelineno-4-216"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-217" name="__codelineno-4-217" href="#__codelineno-4-217"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gH9iJ0kL1M2&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-218" name="__codelineno-4-218" href="#__codelineno-4-218"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-219" name="__codelineno-4-219" href="#__codelineno-4-219"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-220" name="__codelineno-4-220" href="#__codelineno-4-220"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-221" name="__codelineno-4-221" href="#__codelineno-4-221"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SelectOne&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-222" name="__codelineno-4-222" href="#__codelineno-4-222"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<a id="__codelineno-4-223" name="__codelineno-4-223" href="#__codelineno-4-223"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-4-224" name="__codelineno-4-224" href="#__codelineno-4-224"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-225" name="__codelineno-4-225" href="#__codelineno-4-225"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-4-226" name="__codelineno-4-226" href="#__codelineno-4-226"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gH99J1kL1M2&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-227" name="__codelineno-4-227" href="#__codelineno-4-227"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-228" name="__codelineno-4-228" href="#__codelineno-4-228"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;pregnant &amp;&amp; (testResult == &#39;PF&#39; || testResult == &#39;PV&#39; || testResult == &#39;MIX&#39;)&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-229" name="__codelineno-4-229" href="#__codelineno-4-229"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Filter&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-230" name="__codelineno-4-230" href="#__codelineno-4-230"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-231" name="__codelineno-4-231" href="#__codelineno-4-231"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-232" name="__codelineno-4-232" href="#__codelineno-4-232"></a><span class="w">                </span><span class="nt">&quot;fieldToFilter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-233" name="__codelineno-4-233" href="#__codelineno-4-233"></a><span class="w">                </span><span class="nt">&quot;optionsToHide&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-234" name="__codelineno-4-234" href="#__codelineno-4-234"></a><span class="w">                  </span><span class="s2">&quot;TREATED&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-235" name="__codelineno-4-235" href="#__codelineno-4-235"></a><span class="w">                  </span><span class="s2">&quot;FIRST_DOSE&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-236" name="__codelineno-4-236" href="#__codelineno-4-236"></a><span class="w">                  </span><span class="s2">&quot;FIRST_DOSE_REFERRAL&quot;</span>
+<a id="__codelineno-4-237" name="__codelineno-4-237" href="#__codelineno-4-237"></a><span class="w">                </span><span class="p">],</span>
+<a id="__codelineno-4-238" name="__codelineno-4-238" href="#__codelineno-4-238"></a><span class="w">                </span><span class="nt">&quot;optionsToShow&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-4-239" name="__codelineno-4-239" href="#__codelineno-4-239"></a><span class="w">              </span><span class="p">}</span>
+<a id="__codelineno-4-240" name="__codelineno-4-240" href="#__codelineno-4-240"></a><span class="w">            </span><span class="p">},</span>
+<a id="__codelineno-4-241" name="__codelineno-4-241" href="#__codelineno-4-241"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-4-242" name="__codelineno-4-242" href="#__codelineno-4-242"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gH1011kL1M2&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-243" name="__codelineno-4-243" href="#__codelineno-4-243"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-244" name="__codelineno-4-244" href="#__codelineno-4-244"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severity == &#39;SEVERE&#39;&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-245" name="__codelineno-4-245" href="#__codelineno-4-245"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Filter&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-246" name="__codelineno-4-246" href="#__codelineno-4-246"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-247" name="__codelineno-4-247" href="#__codelineno-4-247"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-248" name="__codelineno-4-248" href="#__codelineno-4-248"></a><span class="w">                </span><span class="nt">&quot;fieldToFilter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-249" name="__codelineno-4-249" href="#__codelineno-4-249"></a><span class="w">                </span><span class="nt">&quot;optionsToHide&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-250" name="__codelineno-4-250" href="#__codelineno-4-250"></a><span class="w">                </span><span class="nt">&quot;optionsToShow&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-251" name="__codelineno-4-251" href="#__codelineno-4-251"></a><span class="w">                  </span><span class="s2">&quot;FIRST_DOSE_REFERRAL&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-252" name="__codelineno-4-252" href="#__codelineno-4-252"></a><span class="w">                  </span><span class="s2">&quot;REFERRAL&quot;</span>
+<a id="__codelineno-4-253" name="__codelineno-4-253" href="#__codelineno-4-253"></a><span class="w">                </span><span class="p">]</span>
+<a id="__codelineno-4-254" name="__codelineno-4-254" href="#__codelineno-4-254"></a><span class="w">              </span><span class="p">}</span>
+<a id="__codelineno-4-255" name="__codelineno-4-255" href="#__codelineno-4-255"></a><span class="w">            </span><span class="p">},</span>
+<a id="__codelineno-4-256" name="__codelineno-4-256" href="#__codelineno-4-256"></a><span class="w">            </span><span class="p">{</span>
+<a id="__codelineno-4-257" name="__codelineno-4-257" href="#__codelineno-4-257"></a><span class="w">              </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;gH10J1kL1M2&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-258" name="__codelineno-4-258" href="#__codelineno-4-258"></a><span class="w">              </span><span class="nt">&quot;field&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-259" name="__codelineno-4-259" href="#__codelineno-4-259"></a><span class="w">              </span><span class="nt">&quot;expression&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResult == &#39;PF&#39; || testResult == &#39;PV&#39; || testResult == &#39;MIX&#39;&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-260" name="__codelineno-4-260" href="#__codelineno-4-260"></a><span class="w">              </span><span class="nt">&quot;action&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Show&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-261" name="__codelineno-4-261" href="#__codelineno-4-261"></a><span class="w">              </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-262" name="__codelineno-4-262" href="#__codelineno-4-262"></a><span class="w">              </span><span class="nt">&quot;filterInfo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span>
+<a id="__codelineno-4-263" name="__codelineno-4-263" href="#__codelineno-4-263"></a><span class="w">            </span><span class="p">}</span>
+<a id="__codelineno-4-264" name="__codelineno-4-264" href="#__codelineno-4-264"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-4-265" name="__codelineno-4-265" href="#__codelineno-4-265"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatments&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-266" name="__codelineno-4-266" href="#__codelineno-4-266"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-267" name="__codelineno-4-267" href="#__codelineno-4-267"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Treatment&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-268" name="__codelineno-4-268" href="#__codelineno-4-268"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;تدبير الحالة&quot;</span>
+<a id="__codelineno-4-269" name="__codelineno-4-269" href="#__codelineno-4-269"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-270" name="__codelineno-4-270" href="#__codelineno-4-270"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-271" name="__codelineno-4-271" href="#__codelineno-4-271"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-272" name="__codelineno-4-272" href="#__codelineno-4-272"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;nO3pQ4rS5T6&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-273" name="__codelineno-4-273" href="#__codelineno-4-273"></a><span class="w">          </span><span class="nt">&quot;code&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-274" name="__codelineno-4-274" href="#__codelineno-4-274"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;comment&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-275" name="__codelineno-4-275" href="#__codelineno-4-275"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-276" name="__codelineno-4-276" href="#__codelineno-4-276"></a><span class="w">          </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LongText&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-277" name="__codelineno-4-277" href="#__codelineno-4-277"></a><span class="w">          </span><span class="nt">&quot;mandatory&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-278" name="__codelineno-4-278" href="#__codelineno-4-278"></a><span class="w">          </span><span class="nt">&quot;mainField&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<a id="__codelineno-4-279" name="__codelineno-4-279" href="#__codelineno-4-279"></a><span class="w">          </span><span class="nt">&quot;rules&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-280" name="__codelineno-4-280" href="#__codelineno-4-280"></a><span class="w">          </span><span class="p">],</span>
+<a id="__codelineno-4-281" name="__codelineno-4-281" href="#__codelineno-4-281"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-282" name="__codelineno-4-282" href="#__codelineno-4-282"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-283" name="__codelineno-4-283" href="#__codelineno-4-283"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Comments&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-284" name="__codelineno-4-284" href="#__codelineno-4-284"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ملاحظات وتعليقات&quot;</span>
+<a id="__codelineno-4-285" name="__codelineno-4-285" href="#__codelineno-4-285"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-286" name="__codelineno-4-286" href="#__codelineno-4-286"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-4-287" name="__codelineno-4-287" href="#__codelineno-4-287"></a><span class="w">      </span><span class="p">],</span>
+<a id="__codelineno-4-288" name="__codelineno-4-288" href="#__codelineno-4-288"></a><span class="w">      </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-289" name="__codelineno-4-289" href="#__codelineno-4-289"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-290" name="__codelineno-4-290" href="#__codelineno-4-290"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;xY1200bC1D2&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-291" name="__codelineno-4-291" href="#__codelineno-4-291"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-292" name="__codelineno-4-292" href="#__codelineno-4-292"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;genders&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-293" name="__codelineno-4-293" href="#__codelineno-4-293"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FEMALE&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-294" name="__codelineno-4-294" href="#__codelineno-4-294"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-295" name="__codelineno-4-295" href="#__codelineno-4-295"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-296" name="__codelineno-4-296" href="#__codelineno-4-296"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-297" name="__codelineno-4-297" href="#__codelineno-4-297"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Female&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-298" name="__codelineno-4-298" href="#__codelineno-4-298"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;أنثى&quot;</span>
+<a id="__codelineno-4-299" name="__codelineno-4-299" href="#__codelineno-4-299"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-300" name="__codelineno-4-300" href="#__codelineno-4-300"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-301" name="__codelineno-4-301" href="#__codelineno-4-301"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-302" name="__codelineno-4-302" href="#__codelineno-4-302"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;5Y1200dC5D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-303" name="__codelineno-4-303" href="#__codelineno-4-303"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-304" name="__codelineno-4-304" href="#__codelineno-4-304"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;genders&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-305" name="__codelineno-4-305" href="#__codelineno-4-305"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MALE&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-306" name="__codelineno-4-306" href="#__codelineno-4-306"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-307" name="__codelineno-4-307" href="#__codelineno-4-307"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-308" name="__codelineno-4-308" href="#__codelineno-4-308"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-309" name="__codelineno-4-309" href="#__codelineno-4-309"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Male&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-310" name="__codelineno-4-310" href="#__codelineno-4-310"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ذكر&quot;</span>
+<a id="__codelineno-4-311" name="__codelineno-4-311" href="#__codelineno-4-311"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-312" name="__codelineno-4-312" href="#__codelineno-4-312"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-313" name="__codelineno-4-313" href="#__codelineno-4-313"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-314" name="__codelineno-4-314" href="#__codelineno-4-314"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;688888BC7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-315" name="__codelineno-4-315" href="#__codelineno-4-315"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-316" name="__codelineno-4-316" href="#__codelineno-4-316"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-317" name="__codelineno-4-317" href="#__codelineno-4-317"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;INVALID&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-318" name="__codelineno-4-318" href="#__codelineno-4-318"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-319" name="__codelineno-4-319" href="#__codelineno-4-319"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-320" name="__codelineno-4-320" href="#__codelineno-4-320"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-321" name="__codelineno-4-321" href="#__codelineno-4-321"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Invalid&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-322" name="__codelineno-4-322" href="#__codelineno-4-322"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;غير صالح&quot;</span>
+<a id="__codelineno-4-323" name="__codelineno-4-323" href="#__codelineno-4-323"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-324" name="__codelineno-4-324" href="#__codelineno-4-324"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-325" name="__codelineno-4-325" href="#__codelineno-4-325"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-326" name="__codelineno-4-326" href="#__codelineno-4-326"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;6Y1288dC5D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-327" name="__codelineno-4-327" href="#__codelineno-4-327"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-328" name="__codelineno-4-328" href="#__codelineno-4-328"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-329" name="__codelineno-4-329" href="#__codelineno-4-329"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;NEGATIVE&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-330" name="__codelineno-4-330" href="#__codelineno-4-330"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-331" name="__codelineno-4-331" href="#__codelineno-4-331"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-332" name="__codelineno-4-332" href="#__codelineno-4-332"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-333" name="__codelineno-4-333" href="#__codelineno-4-333"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Negative&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-334" name="__codelineno-4-334" href="#__codelineno-4-334"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;سلبي&quot;</span>
+<a id="__codelineno-4-335" name="__codelineno-4-335" href="#__codelineno-4-335"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-336" name="__codelineno-4-336" href="#__codelineno-4-336"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-337" name="__codelineno-4-337" href="#__codelineno-4-337"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-338" name="__codelineno-4-338" href="#__codelineno-4-338"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;6Y3338dC5D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-339" name="__codelineno-4-339" href="#__codelineno-4-339"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-340" name="__codelineno-4-340" href="#__codelineno-4-340"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-341" name="__codelineno-4-341" href="#__codelineno-4-341"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PF&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-342" name="__codelineno-4-342" href="#__codelineno-4-342"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-343" name="__codelineno-4-343" href="#__codelineno-4-343"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-344" name="__codelineno-4-344" href="#__codelineno-4-344"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-345" name="__codelineno-4-345" href="#__codelineno-4-345"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Plasmodium falciparum&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-346" name="__codelineno-4-346" href="#__codelineno-4-346"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;بلاسموديوم فالسيباروم&quot;</span>
+<a id="__codelineno-4-347" name="__codelineno-4-347" href="#__codelineno-4-347"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-348" name="__codelineno-4-348" href="#__codelineno-4-348"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-349" name="__codelineno-4-349" href="#__codelineno-4-349"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-350" name="__codelineno-4-350" href="#__codelineno-4-350"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10CDF77C7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-351" name="__codelineno-4-351" href="#__codelineno-4-351"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-352" name="__codelineno-4-352" href="#__codelineno-4-352"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;detectionTypes&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-353" name="__codelineno-4-353" href="#__codelineno-4-353"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ACTIVE&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-354" name="__codelineno-4-354" href="#__codelineno-4-354"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-355" name="__codelineno-4-355" href="#__codelineno-4-355"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-356" name="__codelineno-4-356" href="#__codelineno-4-356"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-357" name="__codelineno-4-357" href="#__codelineno-4-357"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Active&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-358" name="__codelineno-4-358" href="#__codelineno-4-358"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;بحث نشط&quot;</span>
+<a id="__codelineno-4-359" name="__codelineno-4-359" href="#__codelineno-4-359"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-360" name="__codelineno-4-360" href="#__codelineno-4-360"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-361" name="__codelineno-4-361" href="#__codelineno-4-361"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-362" name="__codelineno-4-362" href="#__codelineno-4-362"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;555288dC5D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-363" name="__codelineno-4-363" href="#__codelineno-4-363"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-364" name="__codelineno-4-364" href="#__codelineno-4-364"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-365" name="__codelineno-4-365" href="#__codelineno-4-365"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PV&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-366" name="__codelineno-4-366" href="#__codelineno-4-366"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-367" name="__codelineno-4-367" href="#__codelineno-4-367"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-368" name="__codelineno-4-368" href="#__codelineno-4-368"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-369" name="__codelineno-4-369" href="#__codelineno-4-369"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Plasmodium vivax&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-370" name="__codelineno-4-370" href="#__codelineno-4-370"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;بلاسموديوم فيفاكس&quot;</span>
+<a id="__codelineno-4-371" name="__codelineno-4-371" href="#__codelineno-4-371"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-372" name="__codelineno-4-372" href="#__codelineno-4-372"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-373" name="__codelineno-4-373" href="#__codelineno-4-373"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-374" name="__codelineno-4-374" href="#__codelineno-4-374"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;1CD8FEBC7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-375" name="__codelineno-4-375" href="#__codelineno-4-375"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-376" name="__codelineno-4-376" href="#__codelineno-4-376"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatments&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-377" name="__codelineno-4-377" href="#__codelineno-4-377"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;TREATED&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-378" name="__codelineno-4-378" href="#__codelineno-4-378"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-379" name="__codelineno-4-379" href="#__codelineno-4-379"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-380" name="__codelineno-4-380" href="#__codelineno-4-380"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-381" name="__codelineno-4-381" href="#__codelineno-4-381"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Treated&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-382" name="__codelineno-4-382" href="#__codelineno-4-382"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;معالج&quot;</span>
+<a id="__codelineno-4-383" name="__codelineno-4-383" href="#__codelineno-4-383"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-384" name="__codelineno-4-384" href="#__codelineno-4-384"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-385" name="__codelineno-4-385" href="#__codelineno-4-385"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-386" name="__codelineno-4-386" href="#__codelineno-4-386"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;10CDF8BC7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-387" name="__codelineno-4-387" href="#__codelineno-4-387"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-388" name="__codelineno-4-388" href="#__codelineno-4-388"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severities&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-389" name="__codelineno-4-389" href="#__codelineno-4-389"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SEVERE&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-390" name="__codelineno-4-390" href="#__codelineno-4-390"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-391" name="__codelineno-4-391" href="#__codelineno-4-391"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-392" name="__codelineno-4-392" href="#__codelineno-4-392"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-393" name="__codelineno-4-393" href="#__codelineno-4-393"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Severe&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-394" name="__codelineno-4-394" href="#__codelineno-4-394"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;وخيمة&quot;</span>
+<a id="__codelineno-4-395" name="__codelineno-4-395" href="#__codelineno-4-395"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-396" name="__codelineno-4-396" href="#__codelineno-4-396"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-397" name="__codelineno-4-397" href="#__codelineno-4-397"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-398" name="__codelineno-4-398" href="#__codelineno-4-398"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9CC8F8BC7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-399" name="__codelineno-4-399" href="#__codelineno-4-399"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-400" name="__codelineno-4-400" href="#__codelineno-4-400"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;severities&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-401" name="__codelineno-4-401" href="#__codelineno-4-401"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SIMPLE&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-402" name="__codelineno-4-402" href="#__codelineno-4-402"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-403" name="__codelineno-4-403" href="#__codelineno-4-403"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-404" name="__codelineno-4-404" href="#__codelineno-4-404"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-405" name="__codelineno-4-405" href="#__codelineno-4-405"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Simple&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-406" name="__codelineno-4-406" href="#__codelineno-4-406"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;بسيطة&quot;</span>
+<a id="__codelineno-4-407" name="__codelineno-4-407" href="#__codelineno-4-407"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-408" name="__codelineno-4-408" href="#__codelineno-4-408"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-409" name="__codelineno-4-409" href="#__codelineno-4-409"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-410" name="__codelineno-4-410" href="#__codelineno-4-410"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;666288dC5D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-411" name="__codelineno-4-411" href="#__codelineno-4-411"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-412" name="__codelineno-4-412" href="#__codelineno-4-412"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;testResults&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-413" name="__codelineno-4-413" href="#__codelineno-4-413"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MIX&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-414" name="__codelineno-4-414" href="#__codelineno-4-414"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-415" name="__codelineno-4-415" href="#__codelineno-4-415"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-416" name="__codelineno-4-416" href="#__codelineno-4-416"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-417" name="__codelineno-4-417" href="#__codelineno-4-417"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mixed&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-418" name="__codelineno-4-418" href="#__codelineno-4-418"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;مختلط&quot;</span>
+<a id="__codelineno-4-419" name="__codelineno-4-419" href="#__codelineno-4-419"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-420" name="__codelineno-4-420" href="#__codelineno-4-420"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-421" name="__codelineno-4-421" href="#__codelineno-4-421"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-422" name="__codelineno-4-422" href="#__codelineno-4-422"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9CC8F66C7D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-423" name="__codelineno-4-423" href="#__codelineno-4-423"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-424" name="__codelineno-4-424" href="#__codelineno-4-424"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;detectionTypes&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-425" name="__codelineno-4-425" href="#__codelineno-4-425"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;REACTIVE&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-426" name="__codelineno-4-426" href="#__codelineno-4-426"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-427" name="__codelineno-4-427" href="#__codelineno-4-427"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-428" name="__codelineno-4-428" href="#__codelineno-4-428"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-429" name="__codelineno-4-429" href="#__codelineno-4-429"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Reactive&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-430" name="__codelineno-4-430" href="#__codelineno-4-430"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;زيارة روتينية&quot;</span>
+<a id="__codelineno-4-431" name="__codelineno-4-431" href="#__codelineno-4-431"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-432" name="__codelineno-4-432" href="#__codelineno-4-432"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-433" name="__codelineno-4-433" href="#__codelineno-4-433"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-434" name="__codelineno-4-434" href="#__codelineno-4-434"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ECDYFEBC8D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-435" name="__codelineno-4-435" href="#__codelineno-4-435"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-436" name="__codelineno-4-436" href="#__codelineno-4-436"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatments&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-437" name="__codelineno-4-437" href="#__codelineno-4-437"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FIRST_DOSE&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-438" name="__codelineno-4-438" href="#__codelineno-4-438"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-439" name="__codelineno-4-439" href="#__codelineno-4-439"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-440" name="__codelineno-4-440" href="#__codelineno-4-440"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-441" name="__codelineno-4-441" href="#__codelineno-4-441"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;First Dose&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-442" name="__codelineno-4-442" href="#__codelineno-4-442"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;الجرعة الأولى&quot;</span>
+<a id="__codelineno-4-443" name="__codelineno-4-443" href="#__codelineno-4-443"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-444" name="__codelineno-4-444" href="#__codelineno-4-444"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-445" name="__codelineno-4-445" href="#__codelineno-4-445"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-446" name="__codelineno-4-446" href="#__codelineno-4-446"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ECDYF9628D1&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-447" name="__codelineno-4-447" href="#__codelineno-4-447"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-448" name="__codelineno-4-448" href="#__codelineno-4-448"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatments&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-449" name="__codelineno-4-449" href="#__codelineno-4-449"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FIRST_DOSE_REFERRAL&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-450" name="__codelineno-4-450" href="#__codelineno-4-450"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-451" name="__codelineno-4-451" href="#__codelineno-4-451"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-452" name="__codelineno-4-452" href="#__codelineno-4-452"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-453" name="__codelineno-4-453" href="#__codelineno-4-453"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;First Dose &amp; Referral&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-454" name="__codelineno-4-454" href="#__codelineno-4-454"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;الجرعة الأولى وإحالة&quot;</span>
+<a id="__codelineno-4-455" name="__codelineno-4-455" href="#__codelineno-4-455"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-456" name="__codelineno-4-456" href="#__codelineno-4-456"></a><span class="w">        </span><span class="p">},</span>
+<a id="__codelineno-4-457" name="__codelineno-4-457" href="#__codelineno-4-457"></a><span class="w">        </span><span class="p">{</span>
+<a id="__codelineno-4-458" name="__codelineno-4-458" href="#__codelineno-4-458"></a><span class="w">          </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;9RD8FEFC7D0&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-459" name="__codelineno-4-459" href="#__codelineno-4-459"></a><span class="w">          </span><span class="nt">&quot;form&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-460" name="__codelineno-4-460" href="#__codelineno-4-460"></a><span class="w">          </span><span class="nt">&quot;listName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;treatments&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-461" name="__codelineno-4-461" href="#__codelineno-4-461"></a><span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;REFERRAL&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-462" name="__codelineno-4-462" href="#__codelineno-4-462"></a><span class="w">          </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<a id="__codelineno-4-463" name="__codelineno-4-463" href="#__codelineno-4-463"></a><span class="w">          </span><span class="nt">&quot;order&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+<a id="__codelineno-4-464" name="__codelineno-4-464" href="#__codelineno-4-464"></a><span class="w">          </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-465" name="__codelineno-4-465" href="#__codelineno-4-465"></a><span class="w">            </span><span class="nt">&quot;en&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Referral&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-466" name="__codelineno-4-466" href="#__codelineno-4-466"></a><span class="w">            </span><span class="nt">&quot;ar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;إحالة&quot;</span>
+<a id="__codelineno-4-467" name="__codelineno-4-467" href="#__codelineno-4-467"></a><span class="w">          </span><span class="p">}</span>
+<a id="__codelineno-4-468" name="__codelineno-4-468" href="#__codelineno-4-468"></a><span class="w">        </span><span class="p">}</span>
+<a id="__codelineno-4-469" name="__codelineno-4-469" href="#__codelineno-4-469"></a><span class="w">      </span><span class="p">],</span>
+<a id="__codelineno-4-470" name="__codelineno-4-470" href="#__codelineno-4-470"></a><span class="w">      </span><span class="nt">&quot;orgUnits&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<a id="__codelineno-4-471" name="__codelineno-4-471" href="#__codelineno-4-471"></a><span class="w">        </span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+<a id="__codelineno-4-472" name="__codelineno-4-472" href="#__codelineno-4-472"></a><span class="w">        </span><span class="s2">&quot;...&quot;</span>
+<a id="__codelineno-4-473" name="__codelineno-4-473" href="#__codelineno-4-473"></a><span class="w">      </span><span class="p">]</span>
+<a id="__codelineno-4-474" name="__codelineno-4-474" href="#__codelineno-4-474"></a><span class="w">    </span><span class="p">}</span>
+<a id="__codelineno-4-475" name="__codelineno-4-475" href="#__codelineno-4-475"></a><span class="w">  </span><span class="p">]</span>
+<a id="__codelineno-4-476" name="__codelineno-4-476" href="#__codelineno-4-476"></a><span class="p">}</span>
+</code></pre></div>
+<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
+<p>We welcome contributions to enhance Data-Run-Mobile. Please follow these steps:</p>
+<ol>
+<li>Fork the repository.</li>
+<li>Create a new branch (<code>git checkout -b feature-branch</code>).</li>
+<li>Commit your changes (<code>git commit -m 'Add new feature'</code>).</li>
+<li>Push to the branch (<code>git push origin feature-branch</code>).</li>
+<li>Create a pull request.</li>
+</ol>
+<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
+<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for details.</p>
+<h2 id="contact">Contact<a class="headerlink" href="#contact" title="Permanent link">&para;</a></h2>
+<p>For questions or support, please contact:</p>
+<ul>
+<li><strong>Project Maintainer</strong>: Hamza</li>
+<li><strong>Email</strong>: 7amza.it@gmail.com</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../interoperability-and-standards/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 7. Interoperability and Standards">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                7. Interoperability and Standards
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../security/" class="md-footer__link md-footer__link--next" aria-label="Next: 8. Security">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                8. Security
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/orgs/MassPro-NMCPYE/discussions" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.action.edit", "content.code.annotate", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
